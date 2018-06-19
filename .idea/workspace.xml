@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a214e0a-f98c-4d89-993d-11e725c683bd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/naive_bayes/project/email_authors.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/naive_bayes/project/email_preprocess.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/naive_bayes/project/nb_author_id.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/naive_bayes/project/word_data.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svm/simple_example/svm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/naive_bayes/simple_example/naive_bayes.py" beforeDir="false" afterPath="$PROJECT_DIR$/naive_bayes/simple_example/naive_bayes.py" afterDir="false" />
     </list>
@@ -22,13 +18,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nb_author_id.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nb_author_id.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/naive_bayes/project/nb_author_id.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+            <state relative-caret-position="20">
+              <caret line="13" selection-start-line="13" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="svm.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/svm/simple_example/svm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
-                <element signature="e#242#252#0" expanded="true" />
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,8 +73,9 @@
         <option value="$PROJECT_DIR$/tools/email_preprocess.py" />
         <option value="$PROJECT_DIR$/tools/parse_out_email_text.py" />
         <option value="$PROJECT_DIR$/naive_bayes/project/email_preprocess.py" />
-        <option value="$PROJECT_DIR$/naive_bayes/simple_example/naive_bayes.py" />
         <option value="$PROJECT_DIR$/naive_bayes/project/nb_author_id.py" />
+        <option value="$PROJECT_DIR$/naive_bayes/simple_example/naive_bayes.py" />
+        <option value="$PROJECT_DIR$/svm/simple_example/svm.py" />
       </list>
     </option>
   </component>
@@ -110,19 +116,18 @@
               <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="naive_bayes" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="naive_bayes" type="462c0819:PsiDirectoryNode" />
               <item name="simple_example" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="naive_bayes" type="462c0819:PsiDirectoryNode" />
-              <item name="visual_example" type="462c0819:PsiDirectoryNode" />
+              <item name="svm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="svm" type="462c0819:PsiDirectoryNode" />
+              <item name="simple_example" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -142,6 +147,7 @@
       <recent name="$PROJECT_DIR$/clustering" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/svm" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -157,7 +163,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.nb_author_id">
+  <component name="RunManager" selected="Python.svm">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML-Python-Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -234,14 +240,35 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="svm" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ML-Python-Algorithms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/svm/simple_example" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/svm/simple_example/svm.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
       <item itemvalue="Python.main" />
       <item itemvalue="Python.naive_bayes" />
       <item itemvalue="Python.studentMain" />
       <item itemvalue="Python.nb_author_id" />
+      <item itemvalue="Python.svm" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.svm" />
         <item itemvalue="Python.nb_author_id" />
         <item itemvalue="Python.naive_bayes" />
         <item itemvalue="Python.studentMain" />
@@ -264,6 +291,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -271,9 +299,9 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3296593" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39178357" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39178357" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3296593" />
@@ -437,19 +465,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/naive_bayes/simple_example/naive_bayes.py">
+    <entry file="file://$PROJECT_DIR$/naive_bayes/project/nb_author_id.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="20">
+          <caret line="13" selection-start-line="13" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/naive_bayes/project/nb_author_id.py">
+    <entry file="file://$PROJECT_DIR$/naive_bayes/simple_example/naive_bayes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svm/simple_example/svm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
-            <element signature="e#242#252#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
