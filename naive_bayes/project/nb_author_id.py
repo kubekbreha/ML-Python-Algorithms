@@ -10,7 +10,6 @@
     Chris has label 1
 """
 
-import sys
 from time import time
 
 from email_preprocess import preprocess
