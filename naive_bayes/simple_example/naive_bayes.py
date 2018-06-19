@@ -10,7 +10,6 @@ from sklearn.naive_bayes import GaussianNB
 
 clf = GaussianNB()
 clf.fit(X, Y)
-GaussianNB()
 
 print(clf.predict([[3, 2], [0, 0]]))
 print(clf.score(Xtest, Ytest))

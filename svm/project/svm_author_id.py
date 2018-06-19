@@ -19,4 +19,25 @@ features_train, features_test, labels_train, labels_test = preprocess()
 #########################################################
 ### your code goes here ###
 
+from sklearn import svm
+
+clf = svm.SVC()
+
+
+t = time()
+print(clf.fit(features_train, labels_train))
+print("training time:", round(time() - t, 3), "s")
+
+
+
+t0 = time()
+print(clf.predict(features_test))
+print("predict time:", round(time() - t0, 3), "s")
+
+
+print(clf.score(features_test, labels_test))
+
+
+
+
 #########################################################
