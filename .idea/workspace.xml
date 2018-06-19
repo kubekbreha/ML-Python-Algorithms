@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a214e0a-f98c-4d89-993d-11e725c683bd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ML-Python-Algorithms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ML-Python-Algorithms.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naive_bayes/naive_bayes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clustering.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drinking_fountains.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/point.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,10 +13,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ML_Python_Algorithms$main.coverage" NAME="main Coverage Results" MODIFIED="1529352804922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ML_Python_Algorithms$main.coverage" NAME="main Coverage Results" MODIFIED="1529384456569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="naive_bayes.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/naive_bayes/naive_bayes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -40,6 +45,7 @@
         <option value="$PROJECT_DIR$/drinking_fountains.csv" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/clustering.py" />
+        <option value="$PROJECT_DIR$/naive_bayes/naive_bayes.py" />
       </list>
     </option>
   </component>
@@ -70,6 +76,11 @@
             <path>
               <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="naive_bayes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -102,7 +113,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.naive_bayes">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML-Python-Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -122,8 +133,32 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="naive_bayes" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ML-Python-Algorithms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/naive_bayes" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/naive_bayes/naive_bayes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.naive_bayes" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.naive_bayes" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
@@ -149,7 +184,7 @@
       <window_info anchor="right" x="0" y="0" width="370" height="850" id="Documentation" side_tool="true" weight="0.3297619" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" visible="true" weight="0.3296593" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.3296593" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3296593" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
@@ -234,6 +269,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/clustering/drinking_fountains.csv">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/local/lib/python3.6/site-packages/numpy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1215" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/naive_bayes/naive_bayes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
