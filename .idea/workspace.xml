@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a214e0a-f98c-4d89-993d-11e725c683bd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/naive_bayes/project/nb_author_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/naive_bayes/project/nb_author_id.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/naive_bayes/simple_example/naive_bayes.py" beforeDir="false" afterPath="$PROJECT_DIR$/naive_bayes/simple_example/naive_bayes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/naive_bayes/visual_example/ClassifyNB.py" beforeDir="false" afterPath="$PROJECT_DIR$/naive_bayes/visual_example/ClassifyNB.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ML-Python-Algorithms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ML-Python-Algorithms.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/svm/project/svm_author_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/svm/project/svm_author_id.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,10 +22,10 @@
       <file leaf-file-name="svm_author_id.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/svm/project/svm_author_id.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+            <state relative-caret-position="185">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
-                <element signature="e#216#237#0" expanded="true" />
+                <element signature="e#220#230#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -34,8 +34,8 @@
       <file leaf-file-name="nb_author_id.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/naive_bayes/project/nb_author_id.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="389">
+              <caret line="33" column="29" selection-start-line="33" selection-end-line="34" />
               <folding>
                 <element signature="e#241#262#0" expanded="true" />
               </folding>
@@ -55,6 +55,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>cross_validation</find>
+      <find>features_train_transformed</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -78,9 +79,9 @@
         <option value="$PROJECT_DIR$/naive_bayes/project/email_preprocess.py" />
         <option value="$PROJECT_DIR$/svm/simple_example/svm.py" />
         <option value="$PROJECT_DIR$/svm/simple_example/svm_rbf.py" />
-        <option value="$PROJECT_DIR$/naive_bayes/project/nb_author_id.py" />
         <option value="$PROJECT_DIR$/naive_bayes/simple_example/naive_bayes.py" />
         <option value="$PROJECT_DIR$/naive_bayes/visual_example/ClassifyNB.py" />
+        <option value="$PROJECT_DIR$/naive_bayes/project/nb_author_id.py" />
         <option value="$PROJECT_DIR$/svm/project/svm_author_id.py" />
       </list>
     </option>
@@ -508,12 +509,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/svm/project/email_preprocess.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="52" column="89" lean-forward="true" selection-start-line="52" selection-start-column="89" selection-end-line="52" selection-end-column="89" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/naive_bayes/project/nb_author_id.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="389">
+          <caret line="33" column="29" selection-start-line="33" selection-end-line="34" />
           <folding>
             <element signature="e#241#262#0" expanded="true" />
           </folding>
@@ -522,10 +527,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/svm/project/svm_author_id.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        <state relative-caret-position="185">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
-            <element signature="e#216#237#0" expanded="true" />
+            <element signature="e#220#230#0" expanded="true" />
           </folding>
         </state>
       </provider>
