@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a214e0a-f98c-4d89-993d-11e725c683bd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/naive_bayes/naive_bayes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naive_bayes/visual_example/ClassifyNB.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naive_bayes/visual_example/class_vis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naive_bayes/visual_example/prep_terrain_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/naive_bayes/visual_example/studentMain.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/naive_bayes/naive_bayes.py" beforeDir="false" afterPath="$PROJECT_DIR$/naive_bayes/simple_example/naive_bayes.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +21,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="naive_bayes.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/naive_bayes/naive_bayes.py">
+      <file leaf-file-name="naive_bayes.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/naive_bayes/simple_example/naive_bayes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="studentMain.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/naive_bayes/visual_example/studentMain.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="e#304#349#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class_vis.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/naive_bayes/visual_example/class_vis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="930">
+              <caret line="62" column="13" lean-forward="true" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prep_terrain_data.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/naive_bayes/visual_example/prep_terrain_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassifyNB.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/naive_bayes/visual_example/ClassifyNB.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -46,6 +89,10 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/clustering.py" />
         <option value="$PROJECT_DIR$/naive_bayes/naive_bayes.py" />
+        <option value="$PROJECT_DIR$/naive_bayes/visual_example/class_vis.py" />
+        <option value="$PROJECT_DIR$/naive_bayes/visual_example/prep_terrain_data.py" />
+        <option value="$PROJECT_DIR$/naive_bayes/visual_example/ClassifyNB.py" />
+        <option value="$PROJECT_DIR$/naive_bayes/visual_example/studentMain.py" />
       </list>
     </option>
   </component>
@@ -82,6 +129,12 @@
               <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="naive_bayes" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="naive_bayes" type="462c0819:PsiDirectoryNode" />
+              <item name="visual_example" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -95,6 +148,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/naive_bayes/simple_example" />
       <recent name="$PROJECT_DIR$/clustering" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -113,7 +167,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.naive_bayes">
+  <component name="RunManager" selected="Python.studentMain">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML-Python-Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,7 +200,26 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/naive_bayes/naive_bayes.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/naive_bayes/simple_example/naive_bayes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="studentMain" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ML-Python-Algorithms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/naive_bayes/visual_example" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/naive_bayes/visual_example/studentMain.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,9 +228,11 @@
     <list>
       <item itemvalue="Python.main" />
       <item itemvalue="Python.naive_bayes" />
+      <item itemvalue="Python.studentMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.studentMain" />
         <item itemvalue="Python.naive_bayes" />
         <item itemvalue="Python.main" />
       </list>
@@ -185,9 +260,9 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3296593" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3296593" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3296593" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="SciView" />
@@ -275,10 +350,44 @@
         <state relative-caret-position="-1215" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/naive_bayes/naive_bayes.py">
+    <entry file="file://$PROJECT_DIR$/naive_bayes/visual_example/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/naive_bayes/visual_example/ClassifyNB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="90">
+          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/naive_bayes/visual_example/prep_terrain_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/naive_bayes/visual_example/class_vis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="62" column="13" lean-forward="true" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/naive_bayes/simple_example/naive_bayes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/naive_bayes/visual_example/studentMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#304#349#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
