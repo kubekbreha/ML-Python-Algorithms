@@ -4,8 +4,8 @@ This project document my machine learning learning process (hmm. that sounds kin
 
 ## Implemented  algorithms
 
-* [Naive Bayes](https://github.com/kubekbreha/ML-Python_Algorithms/naive_bayes)
-* [SVM](https://github.com/kubekbreha/ML-Python_Algorithms/svm)
+* [Naive Bayes](https://github.com/kubekbreha/ML-Python-Algorithms/tree/master/naive_bayes)
+* [SVM](https://github.com/kubekbreha/ML-Python-Algorithms/tree/master/svm)
 
 ## Using
 
@@ -13,4 +13,4 @@ This project document my machine learning learning process (hmm. that sounds kin
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/kubekbreha/ML-Python_Algorithms/blob/master/LICENCE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/kubekbreha/ML-Python-Algorithms/blob/master/LICENSE) file for details
