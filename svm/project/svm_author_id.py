@@ -20,7 +20,7 @@ features_train, features_test, labels_train, labels_test = preprocess()
 # features_train = features_train[:len(features_train)/100]
 # labels_train = labels_train[:len(labels_train)/100]
 
-clf = svm.SVC(kernel="rbf", C=11000)
+clf = svm.SVC(kernel="rbf", C=10000)
 t0 = time()
 clf.fit(features_train, labels_train)
 print "Training time:", round(time()-t0, 3), "s"
@@ -38,3 +38,7 @@ for i in prediction:
         chris.append(i)
 
 print len(chris)
+
+print prediction[10]
+print prediction[26]
+print prediction[50]
