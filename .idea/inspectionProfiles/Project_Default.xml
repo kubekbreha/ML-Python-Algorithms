@@ -22,6 +22,7 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="naive_bayes.project.nb_author_id.email_preprocess" />
+          <option value="object.predict" />
         </list>
       </option>
     </inspection_tool>
