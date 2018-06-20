@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a214e0a-f98c-4d89-993d-11e725c683bd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/decision_threes/simple_example/decision_three.py" beforeDir="false" afterPath="$PROJECT_DIR$/decision_threes/simple_example/decision_three.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/decision_threes/project/dt_author_id.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/decision_threes/project/email_authors.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/decision_threes/project/email_preprocess.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/decision_threes/project/word_data.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,19 +24,18 @@
       <file leaf-file-name="svm_author_id.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/svm/project/svm_author_id.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="331">
+              <caret line="28" selection-start-line="28" selection-end-line="28" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="decision_three.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/decision_threes/simple_example/decision_three.py">
+      <file leaf-file-name="dt_author_id.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/decision_threes/project/dt_author_id.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="15" />
+            <state>
               <folding>
-                <element signature="e#0#37#0" expanded="true" />
+                <element signature="e#224#245#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,6 +82,7 @@
         <option value="$PROJECT_DIR$/naive_bayes/project/nb_author_id.py" />
         <option value="$PROJECT_DIR$/svm/project/svm_author_id.py" />
         <option value="$PROJECT_DIR$/decision_threes/simple_example/decision_three.py" />
+        <option value="$PROJECT_DIR$/decision_threes/project/dt_author_id.py" />
       </list>
     </option>
   </component>
@@ -119,12 +123,18 @@
               <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="decision_threes" type="462c0819:PsiDirectoryNode" />
-              <item name="simple_example" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="svm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="svm" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -138,15 +148,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/decision_threes/project" />
+      <recent name="$PROJECT_DIR$/svm/project" />
+      <recent name="$PROJECT_DIR$/svm" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/naive_bayes/project" />
       <recent name="$PROJECT_DIR$/naive_bayes/simple_example" />
       <recent name="$PROJECT_DIR$/clustering" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/svm/project" />
-      <recent name="$PROJECT_DIR$/svm" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -289,6 +300,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -441,19 +453,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/svm/project/svm_author_id.py">
+    <entry file="file://$PROJECT_DIR$/decision_threes/simple_example/decision_three.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="150">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/decision_threes/simple_example/decision_three.py">
+    <entry file="file://$PROJECT_DIR$/decision_threes/project/email_authors.pkl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svm/project/svm_author_id.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="15" />
+        <state relative-caret-position="331">
+          <caret line="28" selection-start-line="28" selection-end-line="28" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decision_threes/project/dt_author_id.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#224#245#0" expanded="true" />
           </folding>
         </state>
       </provider>
