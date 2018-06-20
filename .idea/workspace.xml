@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a214e0a-f98c-4d89-993d-11e725c683bd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/knn/knn.py" beforeDir="false" afterPath="$PROJECT_DIR$/knn/knn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adaboost/adaboost.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adaboost/class_vis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adaboost/prep_terrain_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adaboost/sk_example.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,26 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="knn.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/knn/knn.py">
+      <file leaf-file-name="adaboost.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/adaboost/adaboost.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-              <folding>
-                <element signature="e#19#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sk_example.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/knn/sk_example.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="5" />
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="394">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -92,6 +80,7 @@
         <option value="$PROJECT_DIR$/knn/class_vis.py" />
         <option value="$PROJECT_DIR$/knn/sk_example.py" />
         <option value="$PROJECT_DIR$/knn/knn.py" />
+        <option value="$PROJECT_DIR$/adaboost/adaboost.py" />
       </list>
     </option>
   </component>
@@ -126,6 +115,11 @@
             <path>
               <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="adaboost" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="knn" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -141,6 +135,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/adaboost" />
       <recent name="$PROJECT_DIR$/decision_threes/project" />
       <recent name="$PROJECT_DIR$/svm/project" />
       <recent name="$PROJECT_DIR$/svm" />
@@ -302,10 +297,10 @@
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.3296593" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.40781564" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info active="true" anchor="right" id="SciView" order="4" sideWeight="0.83756346" visible="true" weight="0.3297619" />
+      <window_info anchor="right" id="SciView" order="4" sideWeight="0.83756346" visible="true" weight="0.3297619" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -502,6 +497,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/knn/knn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="e#19#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/knn/sk_example.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -512,13 +517,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/knn/knn.py">
+    <entry file="file://$PROJECT_DIR$/adaboost/class_vis.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adaboost/adaboost.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#19#50#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="394">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
