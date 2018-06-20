@@ -29,19 +29,23 @@ plt.show()
 ### your code here!  name your classifier object clf if you want the
 ### visualization code (prettyPicture) to show you the decision boundary
 
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn.neighbors import NearestNeighbors
+import numpy as np
+nbrs = NearestNeighbors(n_neighbors=2, algorithm='ball_tree').fit(features_train)
+distances, indices = nbrs.kneighbors(features_test)
+print indices
 
-nbrs = KNeighborsClassifier(n_neighbors=4, algorithm='ball_tree').fit(features_train, labels_train)
-distances, indices = nbrs.kneighbors(features_train)
+print distances
 
 
 
+# from sklearn.neighbors import KNeighborsClassifier
+#
+# nbrs = KNeighborsClassifier(n_neighbors=4, algorithm='ball_tree').fit(features_train, labels_train)
+# distances, indices = nbrs.kneighbors(features_train)
+#
+#
 try:
     prettyPicture(nbrs, features_test, labels_test)
 except NameError:
     pass
-
-
-
-
-
