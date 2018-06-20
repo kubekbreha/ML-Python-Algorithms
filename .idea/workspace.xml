@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a214e0a-f98c-4d89-993d-11e725c683bd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/adaboost/adaboost.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adaboost/class_vis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adaboost/prep_terrain_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adaboost/sk_example.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/random_forest/class_vis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/random_forest/prep_terrain_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/random_forest/random_forest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/random_forest/sk_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adaboost/sk_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/adaboost/sk_example.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,13 +24,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="adaboost.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="adaboost.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/adaboost/adaboost.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="394">
               <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="random_forest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/random_forest/random_forest.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="sk_example.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/random_forest/sk_example.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="sk_example.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/adaboost/sk_example.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -81,6 +97,8 @@
         <option value="$PROJECT_DIR$/knn/sk_example.py" />
         <option value="$PROJECT_DIR$/knn/knn.py" />
         <option value="$PROJECT_DIR$/adaboost/adaboost.py" />
+        <option value="$PROJECT_DIR$/random_forest/sk_example.py" />
+        <option value="$PROJECT_DIR$/adaboost/sk_example.py" />
       </list>
     </option>
   </component>
@@ -120,7 +138,7 @@
             <path>
               <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="knn" type="462c0819:PsiDirectoryNode" />
+              <item name="svm" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -135,11 +153,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/adaboost" />
       <recent name="$PROJECT_DIR$/decision_threes/project" />
       <recent name="$PROJECT_DIR$/svm/project" />
       <recent name="$PROJECT_DIR$/svm" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/naive_bayes/project" />
@@ -526,6 +544,15 @@
           <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/random_forest/random_forest.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/random_forest/sk_example.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adaboost/sk_example.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
