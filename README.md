@@ -6,6 +6,10 @@ This project document my machine learning learning process (hmm. that sounds kin
 
 * [Naive Bayes](https://github.com/kubekbreha/ML-Python-Algorithms/tree/master/naive_bayes)
 * [SVM](https://github.com/kubekbreha/ML-Python-Algorithms/tree/master/svm)
+* [Decision three](https://github.com/kubekbreha/ML-Python-Algorithms/tree/master/decision_threes)
+* [Adaboost](https://github.com/kubekbreha/ML-Python-Algorithms/tree/master/adaboost)
+* [KNN](https://github.com/kubekbreha/ML-Python-Algorithms/tree/master/knn)
+* [Random_forest](https://github.com/kubekbreha/ML-Python-Algorithms/tree/master/random_forest)
 
 ## Using
 
