@@ -30,14 +30,22 @@ plt.show()
 ### visualization code (prettyPicture) to show you the decision boundary
 
 
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
 
 
+rf = RandomForestClassifier(n_estimators=100, oob_score=True, random_state=123456)
+
+rf.fit(features_train, labels_train)
 
 
+predicted = rf.predict(features_test)
+accuracy = accuracy_score(labels_test, predicted)
 
+print accuracy
 
 
 try:
-    prettyPicture(nbrs, features_test, labels_test)
+    prettyPicture(rf, features_test, labels_test)
 except NameError:
     pass
