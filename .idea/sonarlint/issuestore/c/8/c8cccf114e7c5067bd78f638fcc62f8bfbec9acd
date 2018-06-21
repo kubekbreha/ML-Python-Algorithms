@@ -1,0 +1,6 @@
+
+Npython:S1481"1Remove the unused local variable "training_data".(Š’ï—ıÿÿÿÿ
+npython:S117"WRename this local variable "X_test" to match the regular expression ^[_a-z][a-z0-9_]*$.(½îÇœ
+Jpython:S1481'"-Remove the unused local variable "test_data".(£¤‚Áşÿÿÿÿ
+ppython:S1542"XRename function "makeTerrainData" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(íó…»
+tpython:S117"XRename this local variable "X_train" to match the regular expression ^[_a-z][a-z0-9_]*$.(‚—œúÿÿÿÿ
