@@ -29,15 +29,32 @@ plt.show()
 ### your code here!  name your classifier object clf if you want the
 ### visualization code (prettyPicture) to show you the decision boundary
 
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.ensemble import AdaBoostRegressor
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import r2_score
 
 
+# abc = AdaBoostClassifier(base_estimator=None, n_estimators=50, learning_rate=1.0,
+#                         algorithm='SAMME.R', random_state=None)
+#
+# abc.fit(features_train, labels_train)
+# predicted = abc.predict(features_test)
+# accuracy = accuracy_score(labels_test, predicted)
+# print accuracy
 
 
+abr = AdaBoostRegressor(base_estimator=None, n_estimators=500, learning_rate=1.0,
+                  loss='linear', random_state=None)
+abr.fit(features_train, labels_train)
+predicted_test = abr.predict(features_test)
+test_score = r2_score(labels_test, predicted_test)
 
 
+print test_score
 
 
 try:
-    prettyPicture(nbrs, features_test, labels_test)
+    prettyPicture(abr, features_test, labels_test)
 except NameError:
     pass

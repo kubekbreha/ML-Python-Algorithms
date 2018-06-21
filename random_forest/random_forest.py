@@ -44,7 +44,7 @@ from sklearn.metrics import r2_score
 # accuracy = accuracy_score(labels_test, predicted)
 # print accuracy
 
-# Random forest regression  
+# Random forest regression
 rf = RandomForestRegressor(n_estimators=2, oob_score=True, random_state=2500)
 rf.fit(features_train, labels_train)
 
