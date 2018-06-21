@@ -31,18 +31,28 @@ plt.show()
 
 
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestRegressor
+
 from sklearn.metrics import accuracy_score
+from sklearn.metrics import r2_score
 
 
-rf = RandomForestClassifier(n_estimators=100, oob_score=True, random_state=123456)
+# Random forest clasifier
+# rf = RandomForestClassifier(n_estimators=100, oob_score=True, random_state=123456)
+# rf.fit(features_train, labels_train)
+# predicted = rf.predict(features_test)
+# accuracy = accuracy_score(labels_test, predicted)
+# print accuracy
 
+# Random forest regression  
+rf = RandomForestRegressor(n_estimators=2, oob_score=True, random_state=2500)
 rf.fit(features_train, labels_train)
 
+predicted_test = rf.predict(features_test)
+test_score = r2_score(labels_test, predicted_test)
 
-predicted = rf.predict(features_test)
-accuracy = accuracy_score(labels_test, predicted)
 
-print accuracy
+print test_score
 
 
 try:
