@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2a214e0a-f98c-4d89-993d-11e725c683bd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/datasets_questions/explore_enron_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/datasets_questions/explore_enron_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_project/poi_names.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/poi_names.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +16,7 @@
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$random_forest.coverage" NAME="random_forest Coverage Results" MODIFIED="1529602589628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/random_forest" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$email_preprocess.coverage" NAME="email_preprocess Coverage Results" MODIFIED="1529519944467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/naive_bayes/project" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$dt_author_id.coverage" NAME="dt_author_id Coverage Results" MODIFIED="1529520252241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/decision_threes/project" />
-    <SUITE FILE_PATH="coverage/ML_Python_Algorithms$explore_enron_data.coverage" NAME="explore_enron_data Coverage Results" MODIFIED="1529745661089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datasets_questions" />
+    <SUITE FILE_PATH="coverage/ML_Python_Algorithms$explore_enron_data.coverage" NAME="explore_enron_data Coverage Results" MODIFIED="1529748413824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datasets_questions" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$sk_example.coverage" NAME="sk_example Coverage Results" MODIFIED="1529594328937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/random_forest" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$knn.coverage" NAME="knn Coverage Results" MODIFIED="1529613368396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/knn" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$linear_regresion.coverage" NAME="linear_regresion Coverage Results" MODIFIED="1529744117953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linear_regresion/simple_example" />
@@ -28,8 +29,17 @@
       <file leaf-file-name="explore_enron_data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/datasets_questions/explore_enron_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+            <state relative-caret-position="600">
+              <caret line="52" column="66" selection-start-line="52" selection-start-column="66" selection-end-line="52" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="poi_names.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/final_project/poi_names.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -48,6 +58,12 @@
       <find>cross_validation</find>
       <find>features_train_transformed</find>
       <find>10</find>
+      <find>my_dataset</find>
+      <find>data_dict</find>
+      <find>james</find>
+      <find>stoc</find>
+      <find>email</find>
+      <find>poi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -88,6 +104,7 @@
         <option value="$PROJECT_DIR$/knn/knn.py" />
         <option value="$PROJECT_DIR$/linear_regresion/simple_example/linear_regresion.py" />
         <option value="$PROJECT_DIR$/datasets_questions/dataset.pkl" />
+        <option value="$PROJECT_DIR$/final_project/poi_names.txt" />
         <option value="$PROJECT_DIR$/datasets_questions/explore_enron_data.py" />
       </list>
     </option>
@@ -117,6 +134,11 @@
             <path>
               <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="final_project" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -326,9 +348,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/clustering/clustering.py" />
-    <entry file="file://$PROJECT_DIR$/LICENSE" />
-    <entry file="file://$PROJECT_DIR$/clustering/drinking_fountains.csv" />
     <entry file="file://$PROJECT_DIR$/clustering/main.py" />
     <entry file="file://$PROJECT_DIR$/k_means.py" />
     <entry file="file://$PROJECT_DIR$/LICENSE" />
@@ -500,10 +519,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/final_project/poi_id.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/final_project/poi_email_addresses.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/final_project/poi_names.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/datasets_questions/explore_enron_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        <state relative-caret-position="600">
+          <caret line="52" column="66" selection-start-line="52" selection-start-column="66" selection-end-line="52" selection-end-column="66" />
         </state>
       </provider>
     </entry>
