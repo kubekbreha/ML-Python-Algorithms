@@ -1,9 +1,16 @@
-import numpy as linear_model
+from sklearn import linear_model
 
-train = np.array([[-1, -1], [0, 0], [1, 1], [2, 2]])
+reg = linear_model.LinearRegression()
+reg.fit ([[0, 0], [1, 1], [2, 2]], [0, 1, 2])
+
+print reg.coef_
+print reg.intercept_
 
 
-clf = linear_model.LinearRegression()
-clf.fit(train)
 
-print(clf.coef_)
+
+reg = linear_model.Ridge (alpha = .5)
+reg.fit ([[0, 0], [0, 0], [1, 1]], [0, .1, 1])
+
+print reg.coef_
+print reg.intercept_
