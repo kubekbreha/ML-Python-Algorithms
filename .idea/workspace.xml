@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a214e0a-f98c-4d89-993d-11e725c683bd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/linear_regresion/simple_example/linear_regresion.py" beforeDir="false" afterPath="$PROJECT_DIR$/linear_regresion/simple_example/linear_regresion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasets_questions/dataset.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets_questions/explore_enron_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/datasets_questions/explore_enron_data.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,6 +17,7 @@
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$random_forest.coverage" NAME="random_forest Coverage Results" MODIFIED="1529602589628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/random_forest" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$email_preprocess.coverage" NAME="email_preprocess Coverage Results" MODIFIED="1529519944467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/naive_bayes/project" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$dt_author_id.coverage" NAME="dt_author_id Coverage Results" MODIFIED="1529520252241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/decision_threes/project" />
+    <SUITE FILE_PATH="coverage/ML_Python_Algorithms$explore_enron_data.coverage" NAME="explore_enron_data Coverage Results" MODIFIED="1529745302033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datasets_questions" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$sk_example.coverage" NAME="sk_example Coverage Results" MODIFIED="1529594328937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/random_forest" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$knn.coverage" NAME="knn Coverage Results" MODIFIED="1529613368396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/knn" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$linear_regresion.coverage" NAME="linear_regresion Coverage Results" MODIFIED="1529744117953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linear_regresion/simple_example" />
@@ -24,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="linear_regresion.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/linear_regresion/simple_example/linear_regresion.py">
+      <file leaf-file-name="explore_enron_data.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/datasets_questions/explore_enron_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="315">
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -86,6 +89,8 @@
         <option value="$PROJECT_DIR$/adaboost/adaboost.py" />
         <option value="$PROJECT_DIR$/knn/knn.py" />
         <option value="$PROJECT_DIR$/linear_regresion/simple_example/linear_regresion.py" />
+        <option value="$PROJECT_DIR$/datasets_questions/dataset.pkl" />
+        <option value="$PROJECT_DIR$/datasets_questions/explore_enron_data.py" />
       </list>
     </option>
   </component>
@@ -114,17 +119,6 @@
             <path>
               <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="linear_regresion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="linear_regresion" type="462c0819:PsiDirectoryNode" />
-              <item name="simple_example" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -164,7 +158,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.linear_regresion">
+  <component name="RunManager" selected="Python.explore_enron_data">
     <configuration name="adaboost" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML-Python-Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -179,6 +173,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/adaboost/adaboost.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="explore_enron_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ML-Python-Algorithms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/datasets_questions" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/datasets_questions/explore_enron_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -241,39 +254,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="sk_example" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ML-Python-Algorithms" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/random_forest" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/random_forest/sk_example.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list>
       <item itemvalue="Python.knn" />
-      <item itemvalue="Python.sk_example" />
       <item itemvalue="Python.random_forest" />
       <item itemvalue="Python.adaboost" />
       <item itemvalue="Python.linear_regresion" />
+      <item itemvalue="Python.explore_enron_data" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.explore_enron_data" />
         <item itemvalue="Python.linear_regresion" />
         <item itemvalue="Python.knn" />
         <item itemvalue="Python.adaboost" />
         <item itemvalue="Python.random_forest" />
-        <item itemvalue="Python.sk_example" />
       </list>
     </recent_temporary>
   </component>
@@ -292,21 +286,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="right" x="0" y="0" width="370" height="850" id="Documentation" order="5" sideWeight="0.17038009" side_tool="true" visible="true" weight="0.3297619" />
+      <window_info anchor="right" x="0" y="0" width="370" height="850" id="Documentation" order="5" sideWeight="0.2948886" side_tool="true" visible="true" weight="0.2607143" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.3296593" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23547094" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23547094" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="SonarLint" order="13" weight="0.16733468" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="4" sideWeight="0.82961994" visible="true" weight="0.3297619" />
+      <window_info anchor="right" id="SciView" order="4" sideWeight="0.7051114" visible="true" weight="0.2607143" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -334,10 +327,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/adaboost/sk_example.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/svm/project/svm_author_id.py" />
     <entry file="file://$PROJECT_DIR$/clustering/clustering.py" />
     <entry file="file://$PROJECT_DIR$/LICENSE" />
     <entry file="file://$PROJECT_DIR$/clustering/drinking_fountains.csv" />
@@ -502,6 +491,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets_questions/dataset.pkl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14686">
+          <caret line="6565" column="3" selection-start-line="6565" selection-start-column="3" selection-end-line="6565" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets_questions/explore_enron_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
