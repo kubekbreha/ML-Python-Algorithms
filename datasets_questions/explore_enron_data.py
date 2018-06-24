@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# coding=utf-8
 
 """
     Starter code for exploring the Enron dataset (emails + finances);
@@ -20,7 +21,7 @@ import pickle
 enron_data = pickle.load(open("../final_project/final_project_dataset.pkl", "r"))
 
 # How many data points (people) are in the dataset?
-len(enron_data)
+print len(enron_data)
 len(enron_data.keys())
 
 # For each person, how many features are available?
@@ -77,3 +78,23 @@ for key in enron_data.keys():
         count_email+=1
 print count_salary
 print count_email
+
+
+# How many people in the E+F dataset (as it currently exists) have “NaN” for their total payments?
+# What percentage of people in the dataset as a whole is this?
+count_NaN_tp = 0
+for key in enron_data.keys():
+    if enron_data[key]['total_payments'] == 'NaN':
+        count_NaN_tp+=1
+print count_NaN_tp
+print float(count_NaN_tp)/len(enron_data.keys())
+
+# How many POIs in the E+F dataset have “NaN” for their total payments?
+# What percentage of POI’s as a whole is this?
+count_NaN_tp = 0
+for key in enron_data.keys():
+    if enron_data[key]['total_payments'] == 'NaN' and enron_data[key]['poi'] == True :
+        print
+        count_NaN_tp+=1
+print count_NaN_tp
+print float(count_NaN_tp)/len(enron_data.keys())
