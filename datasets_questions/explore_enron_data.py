@@ -52,3 +52,28 @@ print enron_data['COLWELL WESLEY']['from_this_person_to_poi']
 
 # Whats the value of stock options exercised by Jeffrey K Skilling?
 print enron_data['SKILLING JEFFREY K']['exercised_stock_options']
+
+
+# Sort values
+sorted(enron_data.keys())
+
+# How much money did that person get?
+print enron_data['SKILLING JEFFREY K']['total_payments']
+print enron_data['FASTOW ANDREW S']['total_payments']
+print enron_data['LAY KENNETH L']['total_payments']
+
+# How is an unfilled feature denoted?
+print enron_data['FASTOW ANDREW S']['deferral_payments']
+
+
+# How many folks in this dataset have a quantified salary?
+# What about a known email address?
+count_salary = 0
+count_email = 0
+for key in enron_data.keys():
+    if enron_data[key]['salary'] != 'NaN':
+        count_salary+=1
+    if enron_data[key]['email_address'] != 'NaN':
+        count_email+=1
+print count_salary
+print count_email
