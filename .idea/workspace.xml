@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a214e0a-f98c-4d89-993d-11e725c683bd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/datasets_questions/explore_enron_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/datasets_questions/explore_enron_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linear_regresion/project/finance_regresion.py" beforeDir="false" afterPath="$PROJECT_DIR$/linear_regresion/project/finance_regresion.py" afterDir="false" />
-    </list>
+    <list default="true" id="2a214e0a-f98c-4d89-993d-11e725c683bd" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +27,8 @@
       <file leaf-file-name="finance_regresion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/linear_regresion/project/finance_regresion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="55" column="38" lean-forward="true" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+            <state relative-caret-position="345">
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
               <folding>
                 <element signature="e#364#374#0" expanded="true" />
               </folding>
@@ -323,7 +320,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -561,8 +557,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/linear_regresion/project/finance_regresion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="55" column="38" lean-forward="true" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+        <state relative-caret-position="345">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
           <folding>
             <element signature="e#364#374#0" expanded="true" />
           </folding>
