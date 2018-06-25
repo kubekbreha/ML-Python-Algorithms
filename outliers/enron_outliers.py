@@ -18,8 +18,8 @@ data = featureFormat(data_dict, features)
 print data_dict
 
 for k in data_dict:
-    if (data_dict[k]['bonus'] > 5000000 and data_dict[k]['bonus'] != 'NaN') and \
-            (data_dict[k]['salary'] > 1000000 and data_dict[k]['salary'] != 'NaN'):
+    if (data_dict[k]['bonus'] > 5500000 and data_dict[k]['bonus'] != 'NaN') and\
+            (data_dict[k]['salary'] > 800000 and data_dict[k]['salary'] != 'NaN'):
         print k
 
 

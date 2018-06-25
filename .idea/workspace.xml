@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a214e0a-f98c-4d89-993d-11e725c683bd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outliers/enron_outliers.py" beforeDir="false" afterPath="$PROJECT_DIR$/outliers/enron_outliers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +19,7 @@
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$sk_example.coverage" NAME="sk_example Coverage Results" MODIFIED="1529594328937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/random_forest" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$linear_regresion.coverage" NAME="linear_regresion Coverage Results" MODIFIED="1529859856069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linear_regresion/simple_example" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$decision_three.coverage" NAME="decision_three Coverage Results" MODIFIED="1529494654789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/decision_threes/simple_example" />
-    <SUITE FILE_PATH="coverage/ML_Python_Algorithms$enron_outliers.coverage" NAME="enron_outliers Coverage Results" MODIFIED="1529913626874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/outliers" />
+    <SUITE FILE_PATH="coverage/ML_Python_Algorithms$enron_outliers.coverage" NAME="enron_outliers Coverage Results" MODIFIED="1529913935052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/outliers" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$outlier_removal_regression.coverage" NAME="outlier_removal_regression Coverage Results" MODIFIED="1529910570662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/outliers" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$knn.coverage" NAME="knn Coverage Results" MODIFIED="1529613368396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/knn" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$finance_regresion.coverage" NAME="finance_regresion Coverage Results" MODIFIED="1529906098407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linear_regresion/project" />
@@ -32,8 +31,8 @@
       <file leaf-file-name="enron_outliers.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/outliers/enron_outliers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="270">
+              <caret line="20" column="76" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -595,8 +594,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/outliers/enron_outliers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="270">
+          <caret line="20" column="76" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
         </state>
       </provider>
     </entry>
