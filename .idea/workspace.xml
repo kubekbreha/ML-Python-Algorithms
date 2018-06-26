@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a214e0a-f98c-4d89-993d-11e725c683bd" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/0528486a3359817adbb96e5543004d0c79b333ea" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/0528486a3359817adbb96e5543004d0c79b333ea" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/d/7d7681c091e0563868f75ee8a01d0985f8e5b448" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/d/7d7681c091e0563868f75ee8a01d0985f8e5b448" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k_means/clusters.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/k_means/clusters.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/k_means/k_means_cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/k_means/k_means_cluster.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,6 +21,7 @@
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$email_preprocess.coverage" NAME="email_preprocess Coverage Results" MODIFIED="1529519944467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/naive_bayes/project" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$dt_author_id.coverage" NAME="dt_author_id Coverage Results" MODIFIED="1529520252241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/decision_threes/project" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$explore_enron_data.coverage" NAME="explore_enron_data Coverage Results" MODIFIED="1529911949456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datasets_questions" />
+    <SUITE FILE_PATH="coverage/ML_Python_Algorithms$rescaled_feraytures.coverage" NAME="rescaled_feraytures Coverage Results" MODIFIED="1530054073453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/k_means" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$sk_example.coverage" NAME="sk_example Coverage Results" MODIFIED="1529594328937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/random_forest" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$linear_regresion.coverage" NAME="linear_regresion Coverage Results" MODIFIED="1529859856069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linear_regresion/simple_example" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$decision_three.coverage" NAME="decision_three Coverage Results" MODIFIED="1529494654789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/decision_threes/simple_example" />
@@ -23,7 +29,7 @@
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$outlier_removal_regression.coverage" NAME="outlier_removal_regression Coverage Results" MODIFIED="1529910570662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/outliers" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$knn.coverage" NAME="knn Coverage Results" MODIFIED="1529613368396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/knn" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$finance_regresion.coverage" NAME="finance_regresion Coverage Results" MODIFIED="1529906098407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linear_regresion/project" />
-    <SUITE FILE_PATH="coverage/ML_Python_Algorithms$k_means_cluster.coverage" NAME="k_means_cluster Coverage Results" MODIFIED="1529924175931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/k_means" />
+    <SUITE FILE_PATH="coverage/ML_Python_Algorithms$k_means_cluster.coverage" NAME="k_means_cluster Coverage Results" MODIFIED="1530054370073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/k_means" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$main.coverage" NAME="main Coverage Results" MODIFIED="1529384456569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ML_Python_Algorithms$adaboost.coverage" NAME="adaboost Coverage Results" MODIFIED="1529612841671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adaboost" />
   </component>
@@ -32,20 +38,11 @@
       <file leaf-file-name="k_means_cluster.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/k_means/k_means_cluster.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="67" column="11" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
+            <state relative-caret-position="519">
+              <caret line="76" column="34" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
               <folding>
-                <element signature="e#86#99#0" expanded="true" />
+                <element signature="e#83#96#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="explore_enron_data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/datasets_questions/explore_enron_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="35" selection-start-line="35" selection-end-line="40" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -83,6 +80,8 @@
       <find>total'</find>
       <find>1111258</find>
       <find>draw</find>
+      <find>plt</find>
+      <find>salar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -129,6 +128,7 @@
         <option value="$PROJECT_DIR$/outliers/outlier_cleaner.py" />
         <option value="$PROJECT_DIR$/outliers/outlier_removal_regression.py" />
         <option value="$PROJECT_DIR$/outliers/enron_outliers.py" />
+        <option value="$PROJECT_DIR$/k_means/rescaled_feraytures.py" />
         <option value="$PROJECT_DIR$/k_means/k_means_cluster.py" />
       </list>
     </option>
@@ -162,23 +162,7 @@
             <path>
               <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="datasets_questions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="k_means" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="svm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ML-Python-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ML-Python-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="svm" type="462c0819:PsiDirectoryNode" />
-              <item name="simple_example" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -257,25 +241,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="finance_regresion" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ML-Python-Algorithms" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/linear_regresion/project" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/linear_regresion/project/finance_regresion.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="k_means_cluster" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML-Python-Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -314,20 +279,39 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="rescaled_feraytures" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ML-Python-Algorithms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/k_means" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/k_means/rescaled_features.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
       <item itemvalue="Python.explore_enron_data" />
-      <item itemvalue="Python.finance_regresion" />
       <item itemvalue="Python.outlier_removal_regression" />
       <item itemvalue="Python.enron_outliers" />
       <item itemvalue="Python.k_means_cluster" />
+      <item itemvalue="Python.rescaled_feraytures" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.k_means_cluster" />
+        <item itemvalue="Python.rescaled_feraytures" />
         <item itemvalue="Python.enron_outliers" />
         <item itemvalue="Python.explore_enron_data" />
         <item itemvalue="Python.outlier_removal_regression" />
-        <item itemvalue="Python.finance_regresion" />
       </list>
     </recent_temporary>
   </component>
@@ -350,20 +334,20 @@
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="right" x="0" y="0" width="370" height="850" id="Documentation" order="5" sideWeight="0.2948886" side_tool="true" visible="true" weight="0.2607143" />
+      <window_info anchor="right" x="0" y="0" width="370" height="850" id="Documentation" order="5" sideWeight="0.29750982" side_tool="true" visible="true" weight="0.25059524" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23547094" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.3296593" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23547094" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="SonarLint" order="13" weight="0.16733468" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="4" sideWeight="0.7051114" visible="true" weight="0.2607143" />
+      <window_info anchor="right" id="SciView" order="4" sideWeight="0.70249015" visible="true" weight="0.25059524" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -384,11 +368,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/clustering/point.py" />
     <entry file="file://$PROJECT_DIR$/clustering/drinking_fountains.csv" />
     <entry file="file:///usr/local/lib/python3.6/site-packages/numpy/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -580,9 +563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="445">
           <caret line="44" selection-start-line="44" selection-end-line="57" selection-end-column="16" />
-          <folding>
-            <element signature="e#364#374#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -617,12 +597,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/k_means/rescaled_features.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/k_means/k_means_cluster.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="67" column="11" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
+        <state relative-caret-position="519">
+          <caret line="76" column="34" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
           <folding>
-            <element signature="e#86#99#0" expanded="true" />
+            <element signature="e#83#96#0" expanded="true" />
           </folding>
         </state>
       </provider>

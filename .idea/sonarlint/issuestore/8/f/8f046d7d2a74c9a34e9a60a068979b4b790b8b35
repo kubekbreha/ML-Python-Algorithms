@@ -1,0 +1,9 @@
+
+Zpython:PrintStatementUsage>"-Replace print statement by built-in function.(Ã¦­»8ÚÓëñÃ,
+_python:PrintStatementUsage5"-Replace print statement by built-in function.(ñª©úüÿÿÿÿ8û¼¡òÃ,
+Zpython:PrintStatementUsageW"-Replace print statement by built-in function.(ÃŸÚµ8œî¦òÃ,
+Bpython:S125-"Remove this commented out code.(µ´ô†ùÿÿÿÿ8ÚÓëñÃ,
+kpython:S1542"MRename function "Draw" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(µÚ‘!8ÚÓëñÃ,
+Zpython:PrintStatementUsageE"-Replace print statement by built-in function.(Û¢Ú8ÚÓëñÃ,
+Ypython:PrintStatementUsage_"-Replace print statement by built-in function.(¨ÉïI8ÚÓëñÃ,
+Zpython:PrintStatementUsage6"-Replace print statement by built-in function.(ã“Í„8û¼¡òÃ,

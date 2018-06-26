@@ -46,6 +46,13 @@ feature_2 = "exercised_stock_options"
 poi = "poi"
 features_list = [poi, feature_1, feature_2]
 data = featureFormat(data_dict, features_list)
+
+from sklearn import preprocessing
+
+min_max_scaler = preprocessing.MinMaxScaler()
+data = min_max_scaler.fit_transform(data)
+print min_max_scaler.data_min_
+print min_max_scaler.data_max_
 poi, finance_features = targetFeatureSplit(data)
 
 max = 0
@@ -54,10 +61,9 @@ for i in range(len(data)):
         max = finance_features[i][0]
 print max
 
-
 min = 10000000
 for i in range(len(data)):
-    if finance_features[i][0] < min and finance_features[i][0]!=0:
+    if finance_features[i][0] < min and finance_features[i][0] != 0:
         min = finance_features[i][0]
 print min
 
@@ -65,21 +71,10 @@ print min
 ### you'll want to change this line to
 ### for f1, f2, _ in finance_features:
 ### (as it's currently written, the line below assumes 2 features)
-for f1, f2 in finance_features:
-    plt.scatter(f1, f2)
-plt.show()
-
-### cluster here; create predictions of the cluster labels
-### for the data and store them to a list called pred
 from sklearn.cluster import KMeans
-import numpy as np
 
-kmeans = KMeans(n_clusters=2)
-kmeans.fit(finance_features)
-pred = kmeans.predict(finance_features)
-
-print kmeans.labels_
-print kmeans.cluster_centers_
+clf = KMeans(n_clusters=2)
+pred = clf.fit_predict(finance_features)
 
 ### rename the "name" parameter when you change the number of features
 ### so that the figure gets saved to a different file

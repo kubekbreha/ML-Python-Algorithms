@@ -1,4 +1,2 @@
 
-;python:S125*"Remove this commented out code.(ÓÍÒüÿÿÿÿ
-Spython:PrintStatementUsage$"-Replace print statement by built-in function.(îÙ¨¢
-Xpython:PrintStatementUsage&"-Replace print statement by built-in function.(óÀ¶ãıÿÿÿÿ
+Zpython:PrintStatementUsage("-Replace print statement by built-in function.(»çÍÚ8Ÿó…³Ã,
