@@ -6,7 +6,7 @@ Created on Tue Feb 21 20:05:06 2017
 @author: pd
 """
 
-from IPython import get_ipython
+# from IPython import get_ipython
 # get_ipython().magic('reset -sf')
 
 import numpy as np

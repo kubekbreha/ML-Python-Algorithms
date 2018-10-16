@@ -33,12 +33,6 @@ print ((y_test == preds).mean())
 
 
 
-
-
-
-
-
-
 #### initial visualization
 
 import matplotlib.pyplot as plt
