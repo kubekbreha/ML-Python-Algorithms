@@ -1,8 +1,8 @@
 
-Zpython:PrintStatementUsage>"-Replace print statement by built-in function.(Ã¦­»8ÚÓëñÃ,
-kpython:S1542"MRename function "Draw" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(µÚ‘!8ÚÓëñÃ,
-Bpython:S125-"Remove this commented out code.(µ´ô†ùÿÿÿÿ8ÚÓëñÃ,
-_python:PrintStatementUsage6"-Replace print statement by built-in function.(ñª©úüÿÿÿÿ8×˜ÁòÃ,
-Ypython:PrintStatementUsageT"-Replace print statement by built-in function.(¨ÉïI8ÚÓëñÃ,
-Zpython:PrintStatementUsageD"-Replace print statement by built-in function.(Û¢Ú8ÚÓëñÃ,
-Zpython:PrintStatementUsage7"-Replace print statement by built-in function.(ã“Í„8×˜ÁòÃ,
+@python:S125"Remove this commented out code.(µ´ô†ùÿÿÿÿ8ÚÓëñÃ,
+Wpython:PrintStatementUsage"-Replace print statement by built-in function.(¨ÉïI8ÚÓëñÃ,
+ipython:S1542"MRename function "Draw" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(µÚ‘!8ÚÓëñÃ,
+Xpython:PrintStatementUsage"-Replace print statement by built-in function.(Û¢Ú8ÚÓëñÃ,
+]python:PrintStatementUsage"-Replace print statement by built-in function.(ñª©úüÿÿÿÿ8×˜ÁòÃ,
+Xpython:PrintStatementUsage"-Replace print statement by built-in function.(Ã¦­»8ÚÓëñÃ,
+Xpython:PrintStatementUsage"-Replace print statement by built-in function.(ã“Í„8×˜ÁòÃ,
