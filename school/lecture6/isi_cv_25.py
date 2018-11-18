@@ -21,7 +21,7 @@ N = 1000
 holdout = 200
 
 # priprav syntetickych dat
-X, y = make_regression(1000, shuffle=True, random_state=None)
+X, y = make_regression(N, shuffle=True, random_state=None)
 
 # odlozime 200 vzoriek
 X_h, y_h = X[:holdout], y[:holdout]

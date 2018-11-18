@@ -15,53 +15,32 @@ y_public = np.load('y_public.npy')
 X_eval = np.load('X_eval.npy')
 
 
-bo = np.any(np.isnan(X_public))
-if bo:
-    print('----- bad data')
-
-
-for i, can in enumerate(X_public):
-    bo = np.any(np.isnan(can))
-    if bo:
-        print('bad data ---- ')
-        print(can)
-        cc = np.nan_to_num(can)
-        X_public[i] = cc
-        print(i)
-
-
-
-print('-----------------------')
-print('-----------------------')
-print('-----------------------')
-print('-----------------------')
-print('-----------------------')
-print('-----------------------')
-print('-----------------------')
-
-for can in X_public:
-    bo = np.any(np.isnan(can))
-    if bo:
-        print('bad data ---- ')
-        print(can)
-
-print(X_public[398])
-
-
-
 # ---- checking NaN/bad data
 NaN_X = np.any(np.isnan(X_public))
 print('is bad data present in X_public ? ', NaN_X)
 if NaN_X:
-    X_public = np.nan_to_num(X_public)
-    # for val in X_public:
-    #     np.nan_to_num(val)
+    for i, can in enumerate(X_public):
+        bo = np.any(np.isnan(can))
+        if bo:
+            cc = np.nan_to_num(can)
+            X_public[i] = cc
+
+    NaN_X = np.any(~np.isnan(X_public))
+    print('is data fixed in X_public ? ', NaN_X)
 
 
 NaN_y = np.any(np.isnan(y_public))
-print('is bad data present in X_public ? ', NaN_y)
+print('is bad data present in y_public ? ', NaN_y)
 if NaN_y:
-    y_public = np.nan_to_num(y_public)
+    for i, can in enumerate(y_public):
+        bo = np.any(np.isnan(can))
+        if bo:
+            cc = np.nan_to_num(can)
+            y_public[i] = cc
+
+    NaN_y = np.any(~np.isnan(y_public))
+    print('is data fixed in y_public ? ', NaN_y)
+
 
 # ---- spliting data
 holdout = 20
