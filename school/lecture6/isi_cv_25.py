@@ -10,7 +10,7 @@ Division into folds for model validation
 
 
 #from IPython import get_ipython
-#get_ipython().magic('reset -sf') 
+#get_ipython().magic('reset -sf')
 
 import numpy as np
 from sklearn.datasets import make_regression
@@ -33,4 +33,4 @@ output_string = "Fold: {}, N_train: {}, N_test: {}"
 
 for i, (train, test) in enumerate(kfold):
     print( output_string.format(i, len(y_t[train]), len(y_t[test])))
-
+    clf.fit(X_t[train], y_t[train])

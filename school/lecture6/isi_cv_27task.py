@@ -7,12 +7,12 @@ Created on Tue Feb 21 20:05:06 2017
 
 Design a basic search grid in the parameter space
 +Iterate through the grid
- 
+
 """
 
 
 #from IPython import get_ipython
-#get_ipython().magic('reset -sf') 
+#get_ipython().magic('reset -sf')
 
 from sklearn import datasets
 import numpy as np
@@ -25,21 +25,6 @@ X, y = datasets.make_classification(n_samples=2000, n_features=10, random_state=
 
 
 
+rf = ensemble.RandomForestRegressor(max_depth=20, n_estimators=50)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(cross_val_score(rf, X, y, cv=3))
