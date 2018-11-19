@@ -169,45 +169,6 @@ modelBase.fit(X_public_t, y_public_t)
 evaluate(modelBase, X_public_h, y_public_h, 'RandomForestClassifier', 'base')
 
 # ---- Using best parameters
-modelBest = RandomForestClassifier(bootstrap= False, criterion= 'entropy', max_depth= None, max_features= 10, min_samples_split= 3)
-modelBest.fit(X_public_t, y_public_t)
-evaluate(modelBest, X_public_h, y_public_h, 'RandomForestClassifier', 'best')
-
-
-
-
-# ----- ----- GRID - KNeighborsClassifier ----- -----
-# from sklearn.neighbors import KNeighborsClassifier, KNeighborsRegressor
-# from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
-#
-# n_neighbors = [int(x) for x in np.linspace(start = 2, stop = 20, num = 2)]
-# weights = ['uniform', 'distance']
-# algorithm = ['ball_tree', 'kd_tree', 'brute', 'auto']
-# leaf_size = [int(x) for x in np.linspace(start = 10, stop = 70, num = 10)]
-# p = [1, 2]
-#
-# param_grid = {'n_neighbors': n_neighbors,
-#                'weights': weights,
-#                'algorithm': algorithm,
-#                'leaf_size': leaf_size,
-#                'p': p}
-
-# rf = KNeighborsClassifier()
-# rf_grid =  GridSearchCV(estimator = rf, param_grid = param_grid, cv = 3, verbose=2, n_jobs = -1)
-# # rf_grid =  RandomizedSearchCV(estimator = rf, param_distributions = param_grid, n_iter = 100, cv = 3, verbose=2, random_state=42, n_jobs = -1)
-#
-# rf_grid.fit(X_public_t, y_public_t)
-#
-# print('BEST PARAMETERS')
-# pprint(rf_grid.best_params_)
-# {'algorithm': 'ball_tree',
-#  'leaf_size': 70,
-#  'n_neighbors': 20,
-#  'p': 1,
-#  'weights': 'distance'}
-
-
-# clf = KNeighborsClassifier()
-# # clf = KNeighborsRegressor()
-# clf.fit(X_public_t, y_public_t)
-# evaluate(clf, X_public_h, y_public_h, 'KNeighborsClassifier', 'best')
+# modelBest = RandomForestClassifier(bootstrap= False, criterion= 'entropy', max_depth= None, max_features= 10, min_samples_split= 3)
+# modelBest.fit(X_public_t, y_public_t)
+# evaluate(modelBest, X_public_h, y_public_h, 'RandomForestClassifier', 'best')
