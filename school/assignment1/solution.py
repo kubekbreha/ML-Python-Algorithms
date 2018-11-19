@@ -124,10 +124,10 @@ X_public_t, y_public_t = X_public[holdout:], y_public[holdout:]
 
 
 
-# ----- ----- GRID RandomForestRegressor ----- ------
+# ----- ----- GRID random - RandomForestRegressor ----- ------
 # ---- Getting best parameters
 # from sklearn.model_selection import RandomizedSearchCV
-from sklearn.ensemble import RandomForestRegressor
+# from sklearn.ensemble import RandomForestRegressor
 
 # n_estimators = [int(x) for x in np.linspace(start = 200, stop = 2000, num = 10)]
 # max_features = ['auto', 'sqrt']
@@ -150,20 +150,58 @@ from sklearn.ensemble import RandomForestRegressor
 
 # print('BEST PARAMETERS')
 # pprint(rf_random.best_params_)
-# {'bootstrap': True,
-#  'max_depth': 10,
-#  'max_features': 'auto',
-#  'min_samples_leaf': 4,
-#  'min_samples_split': 5,
-#  'n_estimators': 200}
+# # {'bootstrap': True,
+# #  'max_depth': 10,
+# #  'max_features': 'auto',
+# #  'min_samples_leaf': 4,
+# #  'min_samples_split': 5,
+# #  'n_estimators': 200}
 
-# ---- Using base parameters
-modelBase = RandomForestRegressor(n_estimators = 10, random_state = 42)
-modelBase.fit(X_public_t, y_public_t)
-evaluate(modelBase, X_public_h, y_public_h, 'RandomForrestRegressor', 'base')
+# # ---- Using base parameters
+# modelBase = RandomForestRegressor(n_estimators = 10, random_state = 42)
+# modelBase.fit(X_public_t, y_public_t)
+# evaluate(modelBase, X_public_h, y_public_h, 'RandomForrestRegressor', 'base')
+#
+# # ---- Using best parameters
+# modelBest = RandomForestRegressor(bootstrap=True, max_depth=10, max_features='auto',
+# min_samples_leaf=4, min_samples_split=5, n_estimators=200)
+# modelBest.fit(X_public_t, y_public_t)
+# evaluate(modelBest, X_public_h, y_public_h, 'RandomForrestRegressor', 'best')
 
-# ---- Using best parameters
-modelBest = RandomForestRegressor(bootstrap=True, max_depth=10, max_features='auto',
-min_samples_leaf=4, min_samples_split=5, n_estimators=200)
-modelBest.fit(X_public_t, y_public_t)
-evaluate(modelBest, X_public_h, y_public_h, 'RandomForrestRegressor', 'best')
+
+
+
+
+# ----- ----- GRID search - RandomForestClassifier ----- -----
+# ---- Getting best parameters
+# from sklearn.model_selection import GridSearchCV
+# from sklearn.ensemble import RandomForestClassifier
+#
+# # param_grid = {"max_depth": [3, None],
+# #               "max_features": [1, 3, 10],
+# #               "min_samples_split": [2, 3, 10],
+# #               "bootstrap": [True, False],
+# #               "criterion": ["gini", "entropy"]}
+# #
+# #
+# # rf = RandomForestClassifier()
+# # rf_grid =  GridSearchCV(rf, param_grid=param_grid, cv=5)
+# # rf_grid.fit(X_public_t, y_public_t)
+# #
+# # print('BEST PARAMETERS')
+# # pprint(rf_grid.best_params_)
+# # # {'bootstrap': False,
+# # #  'criterion': 'entropy',
+# # #  'max_depth': None,
+# # #  'max_features': 10,
+# # #  'min_samples_split': 3}
+#
+# # ---- Using base parameters
+# modelBase = RandomForestClassifier()
+# modelBase.fit(X_public_t, y_public_t)
+# evaluate(modelBase, X_public_h, y_public_h, 'RandomForestClassifier', 'base')
+#
+# # ---- Using best parameters
+# modelBest = RandomForestClassifier(bootstrap= False, criterion= 'entropy', max_depth= None, max_features= 10, min_samples_split= 3)
+# modelBest.fit(X_public_t, y_public_t)
+# evaluate(modelBest, X_public_h, y_public_h, 'RandomForestClassifier', 'best')
