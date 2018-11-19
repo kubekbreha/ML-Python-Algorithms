@@ -9,7 +9,6 @@ warnings.warn = warn
 #      -> return y_eval based on X_eval data
 
 # TODO: test on different parts of data, 1/5 -> 2/5 -> 3/5 ...
-
 from pprint import pprint
 
 # ---- Evaluate ressults
@@ -40,7 +39,6 @@ y_public = np.load('y_public.npy')
 
 # MAX size 410 items / every item 250
 X_eval = np.load('X_eval.npy')
-
 
 # ---- checking NaN/bad data -> manually
 # NaN_X = np.any(np.isnan(X_public))
@@ -80,8 +78,6 @@ X_public = imp.transform(X_public)
 scaler = StandardScaler().fit(X_public)
 scaler.transform(X_public)
 
-
-
 # ---- spliting data -> Manually
 # holdout_percentage = 15
 # holdout = int((len(X_public)*holdout_percentage)/100)
@@ -90,111 +86,22 @@ scaler.transform(X_public)
 # # 80%
 # X_public_t, y_public_t = X_public[holdout:], y_public[holdout:]
 
+
 # ---- spliting data -> sklearn
 from sklearn.model_selection import train_test_split
 
 X_public_h, X_public_t, y_public_h, y_public_t = train_test_split(
     X_public, y_public, test_size=0.7, random_state=4)
 
+
+
+from sklearn.ensemble import AdaBoostRegressor
+from sklearn.tree import DecisionTreeRegressor
+
 from sklearn.ensemble import AdaBoostRegressor
 from sklearn.tree import DecisionTreeRegressor
 
 rng = np.random.RandomState(1)
-modelBase = AdaBoostRegressor(DecisionTreeRegressor(max_depth=4), n_estimators=450, random_state=rng)
-modelBase.fit(X_public_t, y_public_t)
-evaluate(modelBase, X_public_h, y_public_h, 'DecisionTreeRegressor', 'base')
-
-
-
-# ------------------------------------------------------------------------------
-# ------------------------------GRIDS-------------------------------------------
-# ------------------------------------------------------------------------------
-
-# # ----- ----- GRID random - RandomForestRegressor ----- ------
-# # ---- Getting best parameters
-# from sklearn.model_selection import RandomizedSearchCV
-# from sklearn.ensemble import RandomForestRegressor
-#
-# n_estimators = [int(x) for x in np.linspace(start = 200, stop = 2000, num = 10)]
-# max_features = ['auto', 'sqrt']
-# max_depth = [int(x) for x in np.linspace(10, 110, num = 11)]
-# max_depth.append(None)
-# min_samples_split = [2, 5, 10]
-# min_samples_leaf = [1, 2, 4]
-# bootstrap = [True, False]
-#
-# random_grid = {'n_estimators': n_estimators,
-#                'max_features': max_features,
-#                'max_depth': max_depth,
-#                'min_samples_split': min_samples_split,
-#                'min_samples_leaf': min_samples_leaf,
-#                'bootstrap': bootstrap}
-#
-# rf = RandomForestRegressor()
-# rf_random = RandomizedSearchCV(estimator = rf, param_distributions = random_grid, n_iter = 100, cv = 3, verbose=2, random_state=42, n_jobs = -1)
-# rf_random.fit(X_public_t, y_public_t)
-#
-# print('BEST PARAMETERS')
-# pprint(rf_random.best_params_)
-# # {'bootstrap': True,
-# #  'max_depth': 10,
-# #  'max_features': 'auto',
-# #  'min_samples_leaf': 4,
-# #  'min_samples_split': 5,
-# #  'n_estimators': 200}
-
-# ---- Using base parameters
-# modelBase = RandomForestRegressor(n_estimators = 10, random_state = 42)
-# modelBase.fit(X_public_t, y_public_t)
-# evaluate(modelBase, X_public_h, y_public_h, 'RandomForrestRegressor', 'base')
-#
-# # ---- Using best parameters
-# modelBest = RandomForestRegressor(bootstrap=True, max_depth=10, max_features='auto',
-# min_samples_leaf=4, min_samples_split=5, n_estimators=200)
-# modelBest.fit(X_public_t, y_public_t)
-# evaluate(modelBest, X_public_h, y_public_h, 'RandomForrestRegressor', 'best')
-
-
-
-
-# ----- ----- GRID search - RandomForestClassifier ----- -----
-# ---- Getting best parameters
-# from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
-# from sklearn.ensemble import RandomForestClassifier
-#
-# n_estimators = [int(x) for x in np.linspace(start = 10, stop = 2000, num = 10)]
-# max_features = ['auto', 'sqrt']
-# max_depth = [int(x) for x in np.linspace(10, 110, num = 11)]
-# max_depth.append(None)
-# min_samples_split = [2, 5, 10]
-# min_samples_leaf = [1, 2, 4]
-# bootstrap = [True, False]
-# criterion = ["gini", "entropy"]
-#
-#
-# param_grid = {'n_estimators': n_estimators,
-#                'max_features': max_features,
-#                'max_depth': max_depth,
-#                'min_samples_split': min_samples_split,
-#                'min_samples_leaf': min_samples_leaf,
-#                'bootstrap': bootstrap,
-#                'criterion': criterion}
-#
-# rf = RandomForestClassifier()
-# rf_grid =  GridSearchCV(estimator = rf, param_grid = param_grid, cv = 3, verbose=2, n_jobs = -1)
-# # rf_grid =  RandomizedSearchCV(estimator = rf, param_distributions = random_grid, n_iter = 100, cv = 3, verbose=2, random_state=42, n_jobs = -1)
-#
-# rf_grid.fit(X_public_t, y_public_t)
-#
-# print('BEST PARAMETERS')
-# pprint(rf_grid.best_params_)
-
-# ---- Using base parameters
-# modelBase = RandomForestClassifier(n_estimators=100, max_depth=2, random_state=0)
-# modelBase.fit(X_public_t, y_public_t)
-# evaluate(modelBase, X_public_h, y_public_h, 'RandomForestClassifier', 'base')
-
-# ---- Using best parameters
-# modelBest = RandomForestClassifier(bootstrap= False, criterion= 'entropy', max_depth= None, max_features= 10, min_samples_split= 3)
-# modelBest.fit(X_public_t, y_public_t)
-# evaluate(modelBest, X_public_h, y_public_h, 'RandomForestClassifier', 'best')
+clf = AdaBoostRegressor(DecisionTreeRegressor(max_depth=4), n_estimators=450, random_state=rng)
+clf.fit(X_public_t, y_public_t)
+evaluate(clf, X_public_h, y_public_h, 'DecisionTreeRegressor', 'base')
