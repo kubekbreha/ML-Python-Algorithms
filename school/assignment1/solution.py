@@ -10,11 +10,19 @@ warnings.warn = warn
 
 # TODO: test on different parts of data, 1/5 -> 2/5 -> 3/5 ...
 
+from pprint import pprint
 
 # ---- Evaluate ressults
-def evaluate(model, test_features, test_labels):
+def evaluate(model, test_features, test_labels, algorithm, parameters):
     trained = model.predict(test_features)
-    print('Model Performance')
+
+    # if values are float convert them to integer
+    if isinstance(trained[0], float):
+        for i, can in enumerate(trained):
+            trained[i] = round(trained[i])
+
+    # round(10)
+    print( algorithm +' model performance with ' + parameters + ' parameters.')
     print('Accuracy = {:0.2f}%.'.format(accuracy_score(trained, test_labels)*100))
     return 0
 
@@ -90,8 +98,7 @@ X_public_t, y_public_t = X_public[holdout:], y_public[holdout:]
 # dt = DecisionTreeClassifier(max_depth=5)
 #
 # dt.fit(X_public_t, y_public_t)
-# trained = dt.predict(X_public_h)
-# print(accuracy_score(trained, y_public_h))
+# evaluate(dt, X_public_h, y_public_h)
 #
 
 
@@ -106,59 +113,57 @@ X_public_t, y_public_t = X_public[holdout:], y_public[holdout:]
 # evaluate(dt, X_public_h, y_public_h)
 
 
-# # ----- ----- MLP ----- -----
+# ----- ----- MLP ----- -----
 # from sklearn.neural_network import MLPClassifier
 #
 # svc = MLPClassifier(verbose=True)
 #
 # svc.fit(X_public_t, y_public_t)
-# trained = svc.predict(X_public_h)
-# print(accuracy_score(trained, y_public_h))
+# evaluate(svc, X_public_h, y_public_h)
 
 
 
 
-# ----- ----- GRID ----- ------
-from pprint import pprint
-from sklearn.model_selection import RandomizedSearchCV
+# ----- ----- GRID RandomForestRegressor ----- ------
+# ---- Getting best parameters
+# from sklearn.model_selection import RandomizedSearchCV
 from sklearn.ensemble import RandomForestRegressor
 
-# Number of trees in random forest
-n_estimators = [int(x) for x in np.linspace(start = 200, stop = 2000, num = 10)]
-# Number of features to consider at every split
-max_features = ['auto', 'sqrt']
-# Maximum number of levels in tree
-max_depth = [int(x) for x in np.linspace(10, 110, num = 11)]
-max_depth.append(None)
-# Minimum number of samples required to split a node
-min_samples_split = [2, 5, 10]
-# Minimum number of samples required at each leaf node
-min_samples_leaf = [1, 2, 4]
-# Method of selecting samples for training each tree
-bootstrap = [True, False]
-# Create the random grid
-random_grid = {'n_estimators': n_estimators,
-               'max_features': max_features,
-               'max_depth': max_depth,
-               'min_samples_split': min_samples_split,
-               'min_samples_leaf': min_samples_leaf,
-               'bootstrap': bootstrap}
+# n_estimators = [int(x) for x in np.linspace(start = 200, stop = 2000, num = 10)]
+# max_features = ['auto', 'sqrt']
+# max_depth = [int(x) for x in np.linspace(10, 110, num = 11)]
+# max_depth.append(None)
+# min_samples_split = [2, 5, 10]
+# min_samples_leaf = [1, 2, 4]
+# bootstrap = [True, False]
+#
+# random_grid = {'n_estimators': n_estimators,
+#                'max_features': max_features,
+#                'max_depth': max_depth,
+#                'min_samples_split': min_samples_split,
+#                'min_samples_leaf': min_samples_leaf,
+#                'bootstrap': bootstrap}
+#
+# rf = RandomForestRegressor()
+# rf_random = RandomizedSearchCV(estimator = rf, param_distributions = random_grid, n_iter = 100, cv = 3, verbose=2, random_state=42, n_jobs = -1)
+# rf_random.fit(X_public_t, y_public_t)
 
-pprint(random_grid)
+# print('BEST PARAMETERS')
+# pprint(rf_random.best_params_)
+# {'bootstrap': True,
+#  'max_depth': 10,
+#  'max_features': 'auto',
+#  'min_samples_leaf': 4,
+#  'min_samples_split': 5,
+#  'n_estimators': 200}
 
+# ---- Using base parameters
+modelBase = RandomForestRegressor(n_estimators = 10, random_state = 42)
+modelBase.fit(X_public_t, y_public_t)
+evaluate(modelBase, X_public_h, y_public_h, 'RandomForrestRegressor', 'base')
 
-# Use the random grid to search for best hyperparameters
-# First create the base model to tune
-rf = RandomForestRegressor()
-
-# current parameters
-pprint(rf.get_params())
-
-# Random search of parameters, using 3 fold cross validation,
-# search across 100 different combinations, and use all available cores
-rf_random = RandomizedSearchCV(estimator = rf, param_distributions = random_grid, n_iter = 100, cv = 3, verbose=2, random_state=42, n_jobs = -1)
-# Fit the random search model
-rf_random.fit(X_public_t, y_public_t)
-
-print('BEST PARAMETERS')
-pprint(rf_random.best_params_)
+# ---- Using best parameters
+modelBest = RandomForestRegressor(bootstrap=True, max_depth=10, max_features='auto',
+min_samples_leaf=4, min_samples_split=5, n_estimators=200)
+modelBest.fit(X_public_t, y_public_t)
+evaluate(modelBest, X_public_h, y_public_h, 'RandomForrestRegressor', 'best')
