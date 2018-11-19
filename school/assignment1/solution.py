@@ -42,41 +42,67 @@ y_public = np.load('y_public.npy')
 X_eval = np.load('X_eval.npy')
 
 
-# ---- checking NaN/bad data
-NaN_X = np.any(np.isnan(X_public))
-print('is bad data present in X_public ? ', NaN_X)
-if NaN_X:
-    for i, can in enumerate(X_public):
-        bo = np.any(np.isnan(can))
-        if bo:
-            cc = np.nan_to_num(can)
-            X_public[i] = cc
+# ---- checking NaN/bad data -> manually
+# NaN_X = np.any(np.isnan(X_public))
+# print('is bad data present in X_public ? ', NaN_X)
+# if NaN_X:
+#     for i, can in enumerate(X_public):
+#         bo = np.any(np.isnan(can))
+#         if bo:
+#             cc = np.nan_to_num(can)
+#             X_public[i] = cc
+#
+#     NaN_X = np.any(~np.isnan(X_public))
+#     print('is data fixed in X_public ? ', NaN_X)
+#
+#
+# NaN_y = np.any(np.isnan(y_public))
+# print('is bad data present in y_public ? ', NaN_y)
+# if NaN_y:
+#     for i, can in enumerate(y_public):
+#         bo = np.any(np.isnan(can))
+#         if bo:
+#             cc = np.nan_to_num(can)
+#             y_public[i] = cc
+#
+#     NaN_y = np.any(~np.isnan(y_public))
+#     print('is data fixed in y_public ? ', NaN_y)
 
-    NaN_X = np.any(~np.isnan(X_public))
-    print('is data fixed in X_public ? ', NaN_X)
+# ---- checking NaN/bad data -> skicit
+from sklearn.preprocessing import Imputer, StandardScaler
+
+# fix corrupt data
+imp = Imputer(missing_values=np.nan, strategy='most_frequent', copy=False)
+imp = imp.fit(X_public)
+X_public = imp.transform(X_public)
+
+# scaler data
+scaler = StandardScaler().fit(X_public)
+scaler.transform(X_public)
 
 
-NaN_y = np.any(np.isnan(y_public))
-print('is bad data present in y_public ? ', NaN_y)
-if NaN_y:
-    for i, can in enumerate(y_public):
-        bo = np.any(np.isnan(can))
-        if bo:
-            cc = np.nan_to_num(can)
-            y_public[i] = cc
 
-    NaN_y = np.any(~np.isnan(y_public))
-    print('is data fixed in y_public ? ', NaN_y)
+# ---- spliting data -> Manually
+# holdout_percentage = 15
+# holdout = int((len(X_public)*holdout_percentage)/100)
+# # 20%
+# X_public_h, y_public_h = X_public[:holdout], y_public[:holdout]
+# # 80%
+# X_public_t, y_public_t = X_public[holdout:], y_public[holdout:]
 
+# ---- spliting data -> sklearn
+from sklearn.model_selection import train_test_split
 
-# ---- spliting data
-holdout_percentage = 20
-holdout = int((len(X_public)*holdout_percentage)/100)
-# 20%
-X_public_h, y_public_h = X_public[:holdout], y_public[:holdout]
-# 80%
-X_public_t, y_public_t = X_public[holdout:], y_public[holdout:]
+X_public_h, X_public_t, y_public_h, y_public_t = train_test_split(
+    X_public, y_public, test_size=0.7, random_state=4)
 
+from sklearn.ensemble import AdaBoostRegressor
+from sklearn.tree import DecisionTreeRegressor
+
+rng = np.random.RandomState(1)
+modelBase = AdaBoostRegressor(DecisionTreeRegressor(max_depth=4), n_estimators=450, random_state=rng)
+modelBase.fit(X_public_t, y_public_t)
+evaluate(modelBase, X_public_h, y_public_h, 'DecisionTreeRegressor', 'base')
 
 
 
@@ -134,7 +160,7 @@ X_public_t, y_public_t = X_public[holdout:], y_public[holdout:]
 # ----- ----- GRID search - RandomForestClassifier ----- -----
 # ---- Getting best parameters
 # from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
-from sklearn.ensemble import RandomForestClassifier
+# from sklearn.ensemble import RandomForestClassifier
 #
 # n_estimators = [int(x) for x in np.linspace(start = 10, stop = 2000, num = 10)]
 # max_features = ['auto', 'sqrt']
@@ -164,9 +190,9 @@ from sklearn.ensemble import RandomForestClassifier
 # pprint(rf_grid.best_params_)
 
 # ---- Using base parameters
-modelBase = RandomForestClassifier(n_estimators=100, max_depth=2, random_state=0)
-modelBase.fit(X_public_t, y_public_t)
-evaluate(modelBase, X_public_h, y_public_h, 'RandomForestClassifier', 'base')
+# modelBase = RandomForestClassifier(n_estimators=100, max_depth=2, random_state=0)
+# modelBase.fit(X_public_t, y_public_t)
+# evaluate(modelBase, X_public_h, y_public_h, 'RandomForestClassifier', 'base')
 
 # ---- Using best parameters
 # modelBest = RandomForestClassifier(bootstrap= False, criterion= 'entropy', max_depth= None, max_features= 10, min_samples_split= 3)
