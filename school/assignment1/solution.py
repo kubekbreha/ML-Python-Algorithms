@@ -79,6 +79,20 @@ X_public_t, y_public_t = X_public[holdout:], y_public[holdout:]
 
 
 
+# ------------------------------------------------------------------------------
+# ------------------------------BASIC-------------------------------------------
+# ------------------------------------------------------------------------------
+
+
+# ----- ----- GRID - GaussianNB ----- -----
+# from sklearn.naive_bayes import GaussianNB
+#
+# # 86.25%
+# clf = GaussianNB()
+# clf.fit(X_public_t, y_public_t)
+# evaluate(clf, X_public_h, y_public_h, 'GaussianNB', 'none')
+
+
 # # ----- ----- SVC ----- -----
 # from sklearn.svm import SVC, LinearSVC, SVR
 #
@@ -89,7 +103,7 @@ X_public_t, y_public_t = X_public[holdout:], y_public[holdout:]
 # svc.fit(X_public_t, y_public_t)
 # trained = svc.predict(X_public_h)
 # print(accuracy_score(trained, y_public_h))
-#
+
 
 #
 # # ----- ----- DecisionTree ----- -----
@@ -124,11 +138,22 @@ X_public_t, y_public_t = X_public[holdout:], y_public[holdout:]
 
 
 
-# ----- ----- GRID random - RandomForestRegressor ----- ------
-# ---- Getting best parameters
+
+
+
+
+
+
+
+# ------------------------------------------------------------------------------
+# ------------------------------GRIDS-------------------------------------------
+# ------------------------------------------------------------------------------
+
+# # ----- ----- GRID random - RandomForestRegressor ----- ------
+# # ---- Getting best parameters
 # from sklearn.model_selection import RandomizedSearchCV
 # from sklearn.ensemble import RandomForestRegressor
-
+#
 # n_estimators = [int(x) for x in np.linspace(start = 200, stop = 2000, num = 10)]
 # max_features = ['auto', 'sqrt']
 # max_depth = [int(x) for x in np.linspace(10, 110, num = 11)]
@@ -147,7 +172,7 @@ X_public_t, y_public_t = X_public[holdout:], y_public[holdout:]
 # rf = RandomForestRegressor()
 # rf_random = RandomizedSearchCV(estimator = rf, param_distributions = random_grid, n_iter = 100, cv = 3, verbose=2, random_state=42, n_jobs = -1)
 # rf_random.fit(X_public_t, y_public_t)
-
+#
 # print('BEST PARAMETERS')
 # pprint(rf_random.best_params_)
 # # {'bootstrap': True,
@@ -157,7 +182,7 @@ X_public_t, y_public_t = X_public[holdout:], y_public[holdout:]
 # #  'min_samples_split': 5,
 # #  'n_estimators': 200}
 
-# # ---- Using base parameters
+# ---- Using base parameters
 # modelBase = RandomForestRegressor(n_estimators = 10, random_state = 42)
 # modelBase.fit(X_public_t, y_public_t)
 # evaluate(modelBase, X_public_h, y_public_h, 'RandomForrestRegressor', 'base')
@@ -171,37 +196,83 @@ X_public_t, y_public_t = X_public[holdout:], y_public[holdout:]
 
 
 
-
 # ----- ----- GRID search - RandomForestClassifier ----- -----
 # ---- Getting best parameters
-# from sklearn.model_selection import GridSearchCV
-# from sklearn.ensemble import RandomForestClassifier
+# from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
+from sklearn.ensemble import RandomForestClassifier
 #
-# # param_grid = {"max_depth": [3, None],
-# #               "max_features": [1, 3, 10],
-# #               "min_samples_split": [2, 3, 10],
-# #               "bootstrap": [True, False],
-# #               "criterion": ["gini", "entropy"]}
-# #
-# #
-# # rf = RandomForestClassifier()
-# # rf_grid =  GridSearchCV(rf, param_grid=param_grid, cv=5)
-# # rf_grid.fit(X_public_t, y_public_t)
-# #
-# # print('BEST PARAMETERS')
-# # pprint(rf_grid.best_params_)
-# # # {'bootstrap': False,
-# # #  'criterion': 'entropy',
-# # #  'max_depth': None,
-# # #  'max_features': 10,
-# # #  'min_samples_split': 3}
+# n_estimators = [int(x) for x in np.linspace(start = 10, stop = 2000, num = 10)]
+# max_features = ['auto', 'sqrt']
+# max_depth = [int(x) for x in np.linspace(10, 110, num = 11)]
+# max_depth.append(None)
+# min_samples_split = [2, 5, 10]
+# min_samples_leaf = [1, 2, 4]
+# bootstrap = [True, False]
+# criterion = ["gini", "entropy"]
 #
-# # ---- Using base parameters
-# modelBase = RandomForestClassifier()
-# modelBase.fit(X_public_t, y_public_t)
-# evaluate(modelBase, X_public_h, y_public_h, 'RandomForestClassifier', 'base')
 #
-# # ---- Using best parameters
-# modelBest = RandomForestClassifier(bootstrap= False, criterion= 'entropy', max_depth= None, max_features= 10, min_samples_split= 3)
-# modelBest.fit(X_public_t, y_public_t)
-# evaluate(modelBest, X_public_h, y_public_h, 'RandomForestClassifier', 'best')
+# param_grid = {'n_estimators': n_estimators,
+#                'max_features': max_features,
+#                'max_depth': max_depth,
+#                'min_samples_split': min_samples_split,
+#                'min_samples_leaf': min_samples_leaf,
+#                'bootstrap': bootstrap,
+#                'criterion': criterion}
+#
+# rf = RandomForestClassifier()
+# rf_grid =  GridSearchCV(estimator = rf, param_grid = param_grid, cv = 3, verbose=2, n_jobs = -1)
+# # rf_grid =  RandomizedSearchCV(estimator = rf, param_distributions = random_grid, n_iter = 100, cv = 3, verbose=2, random_state=42, n_jobs = -1)
+#
+# rf_grid.fit(X_public_t, y_public_t)
+#
+# print('BEST PARAMETERS')
+# pprint(rf_grid.best_params_)
+
+# ---- Using base parameters
+modelBase = RandomForestClassifier(n_estimators=100, max_depth=2, random_state=0)
+modelBase.fit(X_public_t, y_public_t)
+evaluate(modelBase, X_public_h, y_public_h, 'RandomForestClassifier', 'base')
+
+# ---- Using best parameters
+modelBest = RandomForestClassifier(bootstrap= False, criterion= 'entropy', max_depth= None, max_features= 10, min_samples_split= 3)
+modelBest.fit(X_public_t, y_public_t)
+evaluate(modelBest, X_public_h, y_public_h, 'RandomForestClassifier', 'best')
+
+
+
+
+# ----- ----- GRID - KNeighborsClassifier ----- -----
+# from sklearn.neighbors import KNeighborsClassifier, KNeighborsRegressor
+# from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
+#
+# n_neighbors = [int(x) for x in np.linspace(start = 2, stop = 20, num = 2)]
+# weights = ['uniform', 'distance']
+# algorithm = ['ball_tree', 'kd_tree', 'brute', 'auto']
+# leaf_size = [int(x) for x in np.linspace(start = 10, stop = 70, num = 10)]
+# p = [1, 2]
+#
+# param_grid = {'n_neighbors': n_neighbors,
+#                'weights': weights,
+#                'algorithm': algorithm,
+#                'leaf_size': leaf_size,
+#                'p': p}
+
+# rf = KNeighborsClassifier()
+# rf_grid =  GridSearchCV(estimator = rf, param_grid = param_grid, cv = 3, verbose=2, n_jobs = -1)
+# # rf_grid =  RandomizedSearchCV(estimator = rf, param_distributions = param_grid, n_iter = 100, cv = 3, verbose=2, random_state=42, n_jobs = -1)
+#
+# rf_grid.fit(X_public_t, y_public_t)
+#
+# print('BEST PARAMETERS')
+# pprint(rf_grid.best_params_)
+# {'algorithm': 'ball_tree',
+#  'leaf_size': 70,
+#  'n_neighbors': 20,
+#  'p': 1,
+#  'weights': 'distance'}
+
+
+# clf = KNeighborsClassifier()
+# # clf = KNeighborsRegressor()
+# clf.fit(X_public_t, y_public_t)
+# evaluate(clf, X_public_h, y_public_h, 'KNeighborsClassifier', 'best')
