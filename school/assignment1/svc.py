@@ -1,11 +1,11 @@
 from sklearn.ensemble import AdaBoostRegressor
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC
 import numpy as np
 
-class _RandomForest:
+class _SVC:
 
     def init(verbose):
-        model = RandomForestClassifier(max_depth=4, verbose=verbose)
+        model = SVC(verbose=verbose)
         return model
 
     def train(model, X_public_t, y_public_t):

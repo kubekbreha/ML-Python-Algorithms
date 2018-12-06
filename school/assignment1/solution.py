@@ -27,27 +27,50 @@ X_public_h, X_public_t, y_public_h, y_public_t = DataPreprocessing.splitData(X_p
 # ------------------------------------------------------------------------------
 from representation import Representation
 # -----------------------------
-# from d_tree import DecisionTree as dt
-#
-# model = dt.init()
-# modelBoosted = dt.initBoost()
-#
-# model = dt.train(model, X_public_t, y_public_t)
-# modelBoosted = dt.train(modelBoosted, X_public_t, y_public_t)
-#
-# Representation.evaluate(model, X_public_h, y_public_h, "DecisionTree", "")
-# Representation.evaluate(modelBoosted, X_public_h, y_public_h, "DecisionTree", "")
+from d_tree import _DecisionTree as dt
+
+model = dt.init()
+modelBoosted = dt.initBoost()
+
+model = dt.train(model, X_public_t, y_public_t)
+modelBoosted = dt.train(modelBoosted, X_public_t, y_public_t)
+
+Representation.evaluate(model, X_public_h, y_public_h, "DecisionTree", "")
+Representation.evaluate(modelBoosted, X_public_h, y_public_h, "DecisionTree", "")
 
 # -----------------------------
-# from r_forest import RandomForest as rf
+# from r_forest import _RandomForest as rf
 #
-# model = rf.init()
+# model = rf.init(True)
 # model = rf.train(model, X_public_t, y_public_t)
-# Representation.evaluate(model, X_public_h, y_public_h, "DecisionTree", "")
+# Representation.evaluate(model, X_public_h, y_public_h, "RandomForrest", "")
 
 # -----------------------------
-from gaussian import Gaussian as g
+# from gaussian import _Gaussian as g
+#
+# model = g.init(True)
+# model = g.train(model, X_public_t, y_public_t)
+# Representation.evaluate(model, X_public_h, y_public_h, "Gausian", "")
 
-model = g.init()
-model = g.train(model, X_public_t, y_public_t)
-Representation.evaluate(model, X_public_h, y_public_h, "Gausian", "")
+# -----------------------------
+# from svc import _SVC as g
+#
+# model = g.init(True)
+# model = g.train(model, X_public_t, y_public_t)
+# Representation.evaluate(model, X_public_h, y_public_h, "SVC", "")
+
+# -----------------------------
+# from svr import _SVR as r
+#
+# model = r.init(True)
+# model = r.train(model, X_public_t, y_public_t)
+# Representation.evaluate(model, X_public_h, y_public_h, "SVR", "")
+
+# -----------------------------
+# from mlp import _MLP as ml
+#
+# modelClassifier = ml.initClassifier(True)
+#
+# modelClassifier = ml.train(modelClassifier, X_public_t, y_public_t)
+#
+# Representation.evaluate(modelClassifier, X_public_h, y_public_h, "MLP", "")

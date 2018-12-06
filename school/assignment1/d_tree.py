@@ -2,7 +2,7 @@ from sklearn.ensemble import AdaBoostRegressor
 from sklearn.tree import DecisionTreeRegressor
 import numpy as np
 
-class DecisionTree:
+class _DecisionTree:
 
     def init():
         model = DecisionTreeRegressor(max_depth=4)
