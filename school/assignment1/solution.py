@@ -21,18 +21,18 @@ X_public = DataPreprocessing.scalerData(X_public)
 X_eval = DataPreprocessing.scalerData(X_eval)
 
 # split data
-X_public_h, y_public_h, X_public_t, y_public_t = DataPreprocessing.splitData(X_public, y_public)
+X_public_h, X_public_t, y_public_h, y_public_t = DataPreprocessing.splitData(X_public, y_public)
 
-print(X_public_h)
+g
+# ------------------------------------------------------------------------------
+from representation import Representation
+from d_tree import DecisionTree
 
+model = DecisionTree.init()
+modelBoosted = DecisionTree.initBoost()
 
+model = DecisionTree.train(model, X_public_t, y_public_t)
+modelBoosted = DecisionTree.train(modelBoosted, X_public_t, y_public_t)
 
-
-# from sklearn.ensemble import AdaBoostRegressor
-# from sklearn.tree import DecisionTreeRegressor
-#
-#
-# rng = np.random.RandomState(1)
-# clf = AdaBoostRegressor(DecisionTreeRegressor(max_depth=4), n_estimators=450, random_state=rng)
-# clf.fit(X_public_t, y_public_t)
-# evaluate(clf, X_public_h, y_public_h, 'DecisionTreeRegressor', 'base')
+Representation.evaluate(model, X_public_h, y_public_h, "DecisionTree", "")
+Representation.evaluate(modelBoosted, X_public_h, y_public_h, "DecisionTree", "")
