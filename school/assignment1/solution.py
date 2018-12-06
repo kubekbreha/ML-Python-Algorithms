@@ -23,16 +23,31 @@ X_eval = DataPreprocessing.scalerData(X_eval)
 # split data
 X_public_h, X_public_t, y_public_h, y_public_t = DataPreprocessing.splitData(X_public, y_public)
 
-g
+
 # ------------------------------------------------------------------------------
 from representation import Representation
-from d_tree import DecisionTree
+# -----------------------------
+# from d_tree import DecisionTree as dt
+#
+# model = dt.init()
+# modelBoosted = dt.initBoost()
+#
+# model = dt.train(model, X_public_t, y_public_t)
+# modelBoosted = dt.train(modelBoosted, X_public_t, y_public_t)
+#
+# Representation.evaluate(model, X_public_h, y_public_h, "DecisionTree", "")
+# Representation.evaluate(modelBoosted, X_public_h, y_public_h, "DecisionTree", "")
 
-model = DecisionTree.init()
-modelBoosted = DecisionTree.initBoost()
+# -----------------------------
+# from r_forest import RandomForest as rf
+#
+# model = rf.init()
+# model = rf.train(model, X_public_t, y_public_t)
+# Representation.evaluate(model, X_public_h, y_public_h, "DecisionTree", "")
 
-model = DecisionTree.train(model, X_public_t, y_public_t)
-modelBoosted = DecisionTree.train(modelBoosted, X_public_t, y_public_t)
+# -----------------------------
+from gaussian import Gaussian as g
 
-Representation.evaluate(model, X_public_h, y_public_h, "DecisionTree", "")
-Representation.evaluate(modelBoosted, X_public_h, y_public_h, "DecisionTree", "")
+model = g.init()
+model = g.train(model, X_public_t, y_public_t)
+Representation.evaluate(model, X_public_h, y_public_h, "Gausian", "")

@@ -1,11 +1,11 @@
 from sklearn.ensemble import AdaBoostRegressor
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.naive_bayes import GaussianNB
 import numpy as np
 
-class RandomForest:
+class Gaussian:
 
     def init():
-        model = RandomForestClassifier(max_depth=4)
+        model = GaussianNB()
         return model
 
     def train(model, X_public_t, y_public_t):

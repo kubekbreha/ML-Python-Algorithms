@@ -10,7 +10,7 @@ class DecisionTree:
 
 
     def initBoost():
-        rng = np.random.RandomState(1)
+        rng = np.random.RandomState(2)
         model = AdaBoostRegressor(DecisionTreeRegressor(max_depth=4), n_estimators=450, random_state=rng)
         return model
 
