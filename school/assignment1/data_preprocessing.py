@@ -42,9 +42,9 @@ class DataPreprocessing:
         return data;
 
 
-    def splitData(X_public, y_public):
+    def splitData(X_public, y_public, amount):
         X_public_h, X_public_t, y_public_h, y_public_t = train_test_split(
-            X_public, y_public, test_size=0.7, random_state=4)
+            X_public, y_public, test_size=amount)
         return [X_public_h, X_public_t, y_public_h, y_public_t]
 
 
@@ -53,3 +53,16 @@ class DataPreprocessing:
         X_public_h, y_public_h = X_public[:holdout], y_public[:holdout]
         X_public_t, y_public_t = X_public[holdout:], y_public[holdout:]
         return [X_public_h, y_public_h, X_public_t, y_public_t]
+
+
+    def saveData(mode, data):
+        finalPrediction = model.predict(X_eval)
+
+        if isinstance(finalPrediction[0], float):
+            for i, can in enumerate(finalPrediction):
+                finalPrediction[i] = round(finalPrediction[i])
+
+        np.save("y_predikcia.npy", finalPrediction)
+
+        test = np.load('y_predikcia.npy')
+        print(test)
