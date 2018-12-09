@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a214e0a-f98c-4d89-993d-11e725c683bd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/school/assignment2/bfs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/assignment2/dfs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/school/assignment2/solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/school/assignment2/solution.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,10 +35,22 @@
       <file leaf-file-name="solution.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/school/assignment2/solution.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="248" lean-forward="true" selection-start-line="248" selection-end-line="248" />
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dfs.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/school/assignment2/dfs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -48,7 +59,7 @@
       <file leaf-file-name="game_controller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/school/assignment2/game_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
+            <state relative-caret-position="621">
               <caret line="85" column="48" lean-forward="true" selection-start-line="85" selection-start-column="48" selection-end-line="85" selection-end-column="48" />
               <folding>
                 <element signature="e#1300#1525#0" />
@@ -60,8 +71,8 @@
       <file leaf-file-name="bfs.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/school/assignment2/bfs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="180">
+              <caret line="12" column="17" lean-forward="true" selection-end-line="52" selection-end-column="38" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -80,8 +91,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cross_validation</find>
-      <find>features_train_transformed</find>
       <find>10</find>
       <find>my_dataset</find>
       <find>data_dict</find>
@@ -109,6 +118,9 @@
       <find>count_lights</find>
       <find>GameController</find>
       <find>bfs</find>
+      <find>dfs</find>
+      <find>myastar_ai</find>
+      <find>bonusastar_ai</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -162,6 +174,7 @@
         <option value="$PROJECT_DIR$/school/assignment2/game_controller.py" />
         <option value="$PROJECT_DIR$/school/assignment2/nfs.py" />
         <option value="$PROJECT_DIR$/school/assignment2/bfs.py" />
+        <option value="$PROJECT_DIR$/school/assignment2/dfs.py" />
         <option value="$PROJECT_DIR$/school/assignment2/solution.py" />
       </list>
     </option>
@@ -330,9 +343,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/naive_bayes/project/word_data.pkl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/svm/project/email_authors.pkl" />
     <entry file="file://$PROJECT_DIR$/naive_bayes/visual_example/prep_terrain_data.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -583,9 +593,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/school/assignment2/dfs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school/assignment2/bfs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="17" lean-forward="true" selection-end-line="52" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/school/assignment2/game_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
+        <state relative-caret-position="621">
           <caret line="85" column="48" lean-forward="true" selection-start-line="85" selection-start-column="48" selection-end-line="85" selection-end-column="48" />
           <folding>
             <element signature="e#1300#1525#0" />
@@ -593,20 +623,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/school/assignment2/bfs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/school/assignment2/solution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="248" lean-forward="true" selection-start-line="248" selection-end-line="248" />
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

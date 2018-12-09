@@ -7,6 +7,7 @@ import time  # stopwatch
 
 from game_controller import GameController
 from bfs import BFS
+from dfs import DFS
 
 
 
@@ -81,47 +82,7 @@ def myastar_ai(puzzle, row, col):
     return len(listofmoves), steps
 
 
-def dfs_ai(puzzle, row, col):  # depth limited first search Implementation to solve puzzle
-    moves = {}  # dictionary to keep track of visited nodes
-    moves[str(deepcopy(puzzle))] = "visited"
-    listofmoves = []
-    q = Queue.LifoQueue()
-    state = puzzle
-    currentstate = puzzel
-    steps = 0
-    path = []
-    coord = ["start"]
-    path.append((state, coord))
 
-    while (GameController.is_solved(state) != 1):  # while puzzle is not solved
-        for i in range(row):
-            for e in range(col):
-                move = GameController.perform_move(deepcopy(state), i, e)  # perform move on puzzle
-                check = str(move)
-                steps = steps + 1  # count the number of steps
-                c = str(e) + str(i)  # store coordinates of move in C
-                if check in moves:  # if node has been visited then do nothing
-                    a = 0
-
-
-                else:
-                    moves[deepcopy(check)] = "visited"  # add state to visited nodes dictionary
-                    coord.append(c)
-                    q.put(deepcopy(move))  # put the state in our LIFO queue
-                    path.append((deepcopy(move), deepcopy(coord)))  # Keep track of the path that leads to the state
-                    coord.pop()
-
-        state = q.get()  # get the last state added to the queue (LIFO) --> this is the next state to perform move on
-        currentstate, coord = path.pop()
-
-    for i in range(row):
-        for e in range(col):
-            if coord.count((str(i) + str(
-                    e))) % 2 == 1:  # if coordinates occur in any muitple of two then it is the same as not performing the move so we only want odd number moves
-                listofmoves.append(str(i) + str(e))
-                print("Make this move: ", str(i) + str(e))
-
-    return len(listofmoves), steps
 
 
 def bonusastar_ai(puzzle, row, col):
@@ -240,7 +201,7 @@ if start == "start":
 
     # uncomment this block to use the dfs_ai search algorithm
 
-    # dfs_ai(puzzel, row, col)
+    # DFS.perform(puzzel, row, col)
 
     # uncomment to use the A* search
     myastar_ai(puzzel, row,col)
