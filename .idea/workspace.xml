@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a214e0a-f98c-4d89-993d-11e725c683bd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/school/assignment2/game_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ML-Python-Algorithms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ML-Python-Algorithms.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/assignment2/bfs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/school/assignment2/solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/school/assignment2/solution.py" afterDir="false" />
     </list>
@@ -38,8 +36,8 @@
       <file leaf-file-name="solution.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/school/assignment2/solution.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="15" column="10" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="10" />
+            <state relative-caret-position="323">
+              <caret line="248" lean-forward="true" selection-start-line="248" selection-end-line="248" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -54,6 +52,18 @@
               <caret line="85" column="48" lean-forward="true" selection-start-line="85" selection-start-column="48" selection-end-line="85" selection-end-column="48" />
               <folding>
                 <element signature="e#1300#1525#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bfs.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/school/assignment2/bfs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,6 +108,7 @@
       <find>is</find>
       <find>count_lights</find>
       <find>GameController</find>
+      <find>bfs</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -148,9 +159,10 @@
         <option value="$PROJECT_DIR$/k_means/k_means_cluster.py" />
         <option value="$PROJECT_DIR$/k_means/rescaled_features.py" />
         <option value="$PROJECT_DIR$/school/assignment2/game_logic.py" />
-        <option value="$PROJECT_DIR$/school/assignment2/solution.py" />
         <option value="$PROJECT_DIR$/school/assignment2/game_controller.py" />
         <option value="$PROJECT_DIR$/school/assignment2/nfs.py" />
+        <option value="$PROJECT_DIR$/school/assignment2/bfs.py" />
+        <option value="$PROJECT_DIR$/school/assignment2/solution.py" />
       </list>
     </option>
   </component>
@@ -314,7 +326,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -582,12 +594,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/school/assignment2/bfs.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/school/assignment2/solution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="10" />
+        <state relative-caret-position="323">
+          <caret line="248" lean-forward="true" selection-start-line="248" selection-end-line="248" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
