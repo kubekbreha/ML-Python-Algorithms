@@ -38,11 +38,12 @@ class DFS:
             state = q.get()  # get the last state added to the queue (LIFO) --> this is the next state to perform move on
             currentstate, coord = path.pop()
 
+        ret = []
         for i in range(row):
             for e in range(col):
                 if coord.count((str(i) + str(
                         e))) % 2 == 1:  # if coordinates occur in any muitple of two then it is the same as not performing the move so we only want odd number moves
                     listofmoves.append(str(i) + str(e))
-                    print("Make this move: ", str(i) + str(e))
+                    ret.append([str(i),str(e)])
 
-        return len(listofmoves), steps
+        return ret

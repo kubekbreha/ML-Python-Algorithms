@@ -1,0 +1,5 @@
+
+lpython:S100"URename method "initClassifier" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(ΑΖζ
+ppython:S100"TRename method "initRegressor" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(Ώ‹Έτϊÿÿÿÿ
+ppython:S100"YRename method "initBoostRegressor" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(ξ³ιε
+rpython:S117"VRename this parameter "X_public_t" to match the regular expression ^[_a-z][a-z0-9_]*$.(·‹Αψÿÿÿÿ

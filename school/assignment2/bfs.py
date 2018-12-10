@@ -43,11 +43,12 @@ class BFS:
             fifo = q.get()  # get the first state
             currentstate, coord = path.pop(1)  # get the state and the matching path to get to it
 
+        ret = []
         for i in range(row):
             for e in range(col):
                 if coord.count((str(i) + str(
                         e))) % 2 == 1:  # if coordinates occur in any muitple of two then it is the same as not performing the move so we only want odd number moves
                     listofmoves.append(str(i) + str(e))
-                    print("Make this move: ", str(i) + str(e))
+                    ret.append([str(i),str(e)])
 
-        return len(listofmoves), steps
+        return ret

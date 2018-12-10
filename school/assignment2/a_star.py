@@ -66,15 +66,15 @@ class AStar:
             priority, info = path.get()
             coord = info[1]
 
+        ret = []
         for i in range(row):
             for e in range(col):
                 if coord.count((str(i) + str(
                         e))) % 2 == 1:  # if coordinates occur in any muitple of two then it is the same as not performing the move so we only want odd number moves
                     listofmoves.append(str(i) + str(e))
-                    print("Make this move: ", str(i) + str(e))
+                    ret.append([str(i), str(e)])
 
-        return len(listofmoves), steps
-
+        return ret
 
 
 
@@ -116,7 +116,8 @@ class AStar:
                                 q.put((1, state))  # put the state in our queue
                                 coord.append(c)
                                 path.put((1, (
-                                deepcopy(pmove), deepcopy(coord))))  # Keep track of the path that leads to the state
+                                    deepcopy(pmove),
+                                    deepcopy(coord))))  # Keep track of the path that leads to the state
                                 coord.pop()
 
 
@@ -125,7 +126,8 @@ class AStar:
                                 q.put((2, state))  # put the state in our queue
                                 coord.append(c)
                                 path.put((2, (
-                                deepcopy(pmove), deepcopy(coord))))  # Keep track of the path that leads to the state
+                                    deepcopy(pmove),
+                                    deepcopy(coord))))  # Keep track of the path that leads to the state
                                 coord.pop()
 
 
@@ -134,7 +136,8 @@ class AStar:
                                 q.put((3, state))  # put the state in our queue
                                 coord.append(c)
                                 path.put((3, (
-                                deepcopy(pmove), deepcopy(coord))))  # Keep track of the path that leads to the state
+                                    deepcopy(pmove),
+                                    deepcopy(coord))))  # Keep track of the path that leads to the state
                                 coord.pop()
 
                             else:  # else treat as a regular state to explore
@@ -142,18 +145,21 @@ class AStar:
                                 q.put((4, state))  # put the state in our queue
                                 coord.append(c)
                                 path.put((4, (
-                                deepcopy(pmove), deepcopy(coord))))  # Keep track of the path that leads to the state
+                                    deepcopy(pmove),
+                                    deepcopy(coord))))  # Keep track of the path that leads to the state
                                 coord.pop()
 
             junk, fifo = q.get()  # get the highest priority state
             priority, info = path.get()
             coord = info[1]
 
+        ret = []
         for i in range(row):
             for e in range(col):
                 if coord.count((str(i) + str(
-                        e))) % 2 == 1:  # if coordinates occur in any muitple of two then it is the same as not performing the move so we only want odd number moves
+                        e))) % 2 == 1:  # if coordinates occur in any muitple of two then it is the same as not
+                    # performing the move so we only want odd number moves
                     listofmoves.append(str(i) + str(e))
-                    print("Make this move: ", str(i) + str(e))
+                    ret.append([str(i), str(e)])
 
-        return len(listofmoves), steps
+        return ret

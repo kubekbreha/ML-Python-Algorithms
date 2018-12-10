@@ -40,3 +40,21 @@ L
 k_means/rescaled_features.py,4/9/49e0984fb288975553b95640b96f6aece1dbb436
 M
 school/assignment1/X_eval.npy,4/1/41df374cfc143c6c456ff33d0345cd7fff7a4550
+L
+school/assignment1/d_tree.py,5/4/54f18b99457ebc3fcc9defbe5d9a125c766ecbe4
+T
+$school/assignment1/representation.py,7/a/7a1955c10ff592a94eb29275c3d4c443c8c63b95
+I
+school/assignment1/mlp.py,e/b/eb0ac8df1ae5911fd588861b70c6e895abfb1700
+N
+school/assignment1/solution.py,6/9/69c1b82b301cb47a05b4319ba0ba74ed19b27307
+L
+school/assignment2/a_star.py,6/a/6ab2ef0438781741bc0cd54b1b97248f8d1f0117
+N
+school/assignment2/solution.py,0/b/0b50a4ca8ae63140927d52514c37721eec4ffc50
+I
+school/assignment2/dfs.py,f/b/fb523f07e8bce89fdf6d5e4cd979de9277cfe100
+U
+%school/assignment2/game_controller.py,1/6/165198c852eb8e485604387fdeb3e0f50fa82498
+I
+school/assignment2/bfs.py,3/a/3ae20bfa307138a58a99cc4dd9e9d7e483c3e1e5
