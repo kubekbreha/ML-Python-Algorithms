@@ -29,7 +29,7 @@ class BFS:
                     c = str(e) + str(i)  # store coordinates of move in C
 
                     if check in moves:  # if the node has been visited do nothing
-                        a = 0
+                        pass
 
                     else:
                         moves[deepcopy(check)] = "visited"  # add the new state to dictionary of visited nodes
@@ -47,7 +47,8 @@ class BFS:
         for i in range(row):
             for e in range(col):
                 if coord.count((str(i) + str(
-                        e))) % 2 == 1:  # if coordinates occur in any muitple of two then it is the same as not performing the move so we only want odd number moves
+                        e))) % 2 == 1:  # if coordinates occur in any muitple of two then it is the same as not
+                    # performing the move so we only want odd number moves
                     listofmoves.append(str(i) + str(e))
                     ret.append([str(i),str(e)])
 

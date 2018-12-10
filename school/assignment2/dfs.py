@@ -5,9 +5,10 @@ from copy import deepcopy
 
 class DFS:
 
-
-    def perform(puzzle, row, col):  # depth limited first search Implementation to solve puzzle
-        moves = {}  # dictionary to keep track of visited nodes
+    # depth limited first search Implementation to solve puzzle
+    def perform(puzzle, row, col):
+        # dictionary to keep track of visited nodes
+        moves = {}
         moves[str(deepcopy(puzzle))] = "visited"
         listofmoves = []
         q = Queue.LifoQueue()
@@ -25,7 +26,7 @@ class DFS:
                     steps = steps + 1  # count the number of steps
                     c = str(e) + str(i)  # store coordinates of move in C
                     if check in moves:  # if node has been visited then do nothing
-                        a = 0
+                        pass
 
 
                     else:
@@ -35,14 +36,16 @@ class DFS:
                         path.append((deepcopy(move), deepcopy(coord)))  # Keep track of the path that leads to the state
                         coord.pop()
 
-            state = q.get()  # get the last state added to the queue (LIFO) --> this is the next state to perform move on
+            # get the last state added to the queue (LIFO) --> this is the next state to perform move on
+            state = q.get()
             currentstate, coord = path.pop()
 
         ret = []
         for i in range(row):
             for e in range(col):
                 if coord.count((str(i) + str(
-                        e))) % 2 == 1:  # if coordinates occur in any muitple of two then it is the same as not performing the move so we only want odd number moves
+                        e))) % 2 == 1:  # if coordinates occur in any muitple of two then it is the same as not
+                    # performing the move so we only want odd number moves
                     listofmoves.append(str(i) + str(e))
                     ret.append([str(i),str(e)])
 

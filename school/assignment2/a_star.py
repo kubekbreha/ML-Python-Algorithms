@@ -8,12 +8,9 @@ class AStar:
     def perform(puzzle, row, col):
         listofmoves = []
         q = Queue.PriorityQueue()
-        state = puzzle
         fifo = puzzle
         steps = 0
-        moves = {}
-        moves[str(deepcopy(puzzle))] = "visited"
-        lights = 0
+        moves = {str(deepcopy(puzzle)): "visited"}
         path = Queue.PriorityQueue()
         coord = ["start"]
 
@@ -31,12 +28,12 @@ class AStar:
 
                     if check in moves:
                         # if node has been been visited then do nothing
-                        a = 0
+                        pass
 
 
                     else:
 
-                        if (lights == 0):
+                        if lights == 0:
                             # prioritize puzzles that have been solved
                             moves[deepcopy(check)] = "visited"
                             q.put((1, state))  # put the state in our queue
@@ -45,8 +42,8 @@ class AStar:
                             path.put((1, (deepcopy(pmove), check2)))  # Keep track of the path that leads to the state
                             coord.pop()
 
-
-                        elif (lights == 3):  # prioritize puzzles that have one more move to solve next
+                            # prioritize puzzles that have one more move to solve next
+                        elif lights == 3:
                             moves[deepcopy(check)] = "visited"
                             q.put((2, state))  # put the state in our queue
                             coord.append(c)
@@ -79,16 +76,13 @@ class AStar:
 
 
 
-
     def perform2(puzzle, row, col):
         listofmoves = []
         q = Queue.PriorityQueue()
-        state = puzzle
         fifo = puzzle
         steps = 0
         moves = {}
         moves[str(deepcopy(puzzle))] = "visited"
-        lights = 0
         path = Queue.PriorityQueue()
         coord = ["start"]
 
@@ -107,11 +101,12 @@ class AStar:
                         c = str(e) + str(i)  # store coordinates of move in C
 
                         if check in moves:  # if node has been been visited then do nothing
-                            a = 0
+                            pass
 
 
                         else:
-                            if (lights == 0):  # prioritize puzzles that have been solved
+                            # prioritize puzzles that have been solved
+                            if lights == 0:
                                 moves[deepcopy(check)] = "visited"
                                 q.put((1, state))  # put the state in our queue
                                 coord.append(c)
@@ -120,8 +115,8 @@ class AStar:
                                     deepcopy(coord))))  # Keep track of the path that leads to the state
                                 coord.pop()
 
-
-                            elif (lights == 5):  # prioritize puzzles that have one more move to solve next
+                            # prioritize puzzles that have one more move to solve next
+                            elif lights == 5:
                                 moves[deepcopy(check)] = "visited"
                                 q.put((2, state))  # put the state in our queue
                                 coord.append(c)
@@ -130,8 +125,8 @@ class AStar:
                                     deepcopy(coord))))  # Keep track of the path that leads to the state
                                 coord.pop()
 
-
-                            elif (lights == 3):  # prioritize puzzles that have one more move to solve next
+                            # prioritize puzzles that have one more move to solve next
+                            elif lights == 3:
                                 moves[deepcopy(check)] = "visited"
                                 q.put((3, state))  # put the state in our queue
                                 coord.append(c)

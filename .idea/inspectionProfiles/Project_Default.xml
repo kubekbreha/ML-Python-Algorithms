@@ -11,6 +11,13 @@
         </value>
       </option>
     </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="W391" />
+        </list>
+      </option>
+    </inspection_tool>
     <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <option name="ignoredErrors">
         <list>
@@ -23,6 +30,7 @@
         <list>
           <option value="naive_bayes.project.nb_author_id.email_preprocess" />
           <option value="object.predict" />
+          <option value="school.assignment2.solution.game_controller" />
         </list>
       </option>
     </inspection_tool>

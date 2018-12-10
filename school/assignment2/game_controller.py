@@ -4,7 +4,6 @@ import random  # randint()
 class GameController:
 
     def create_puzzle(rows, cols):
-        print("Welcome to the Lights Out Game!")
         puzzle = []
         for i in range(rows):
             puzzle.append([])
@@ -82,9 +81,6 @@ class GameController:
         if (puzzle == "empty"):  # a check for for visted nodes
             return 0
         else:  # else if the lights are all off then return 1 to terminate the game
-            print("congrats the game is solved!")
-            print("*****************************")
-            print("Goodbye!!")
             return 1
 
 
@@ -96,6 +92,6 @@ class GameController:
         counter = 0
         for i in range(totalr):
             for e in range(totalc):
-                if puzzle[i][e] == "[ 1 ]":  # check to see if the square has a light on
+                if puzzle[i][e] == " 1 ":  # check to see if the square has a light on
                     counter = (counter + 1)
         return counter
