@@ -19,7 +19,7 @@ puzzel = GameController.create_puzzle(row, col)
 
 puzzel = GameController.scramble(puzzel)
 
-puzzel = [[' 0 ', ' 0 ', ' 0 '], [' 1 ', ' 0 ', ' 1 ']]
+# puzzel = [[' 0 ', ' 0 ', ' 0 '], [' 1 ', ' 0 ', ' 1 ']]
 
 puzzelorg = deepcopy(puzzel)
 puzzeldfs = deepcopy(puzzel)
@@ -32,7 +32,7 @@ puzzeldfs = deepcopy(puzzel)
 # moves =  AStar.myastar_ai(puzzel, row,col)
 
 # uncomment to use the BFS
-moves = BFS.perform(puzzel,row,col)
+moves = BFS.perform(puzzel, row, col)
 # -------------------------------------------------------------------------
 
 
@@ -51,3 +51,20 @@ for move in moves:
         print("".join(n))
 
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+
+
+if GameController.is_solved(puzzelorg):
+    print("hurray")
+else:
+    print(puzzelorg[0][1])
+    print("----")
+    if puzzelorg[0][1] == " 1 ":
+        print("perform1")
+        puzzelorg = GameController.perform_move(puzzelorg, 0, 2)
+        for n in puzzelorg:
+            print("".join(n))
+    elif puzzelorg[1][1] == " 1 ":
+        print("perform2")
+        puzzelorg =GameController.perform_move(puzzelorg, 1, 2)
+        for n in puzzelorg:
+            print("".join(n))

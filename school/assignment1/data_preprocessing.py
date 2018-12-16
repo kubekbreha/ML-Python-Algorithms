@@ -19,13 +19,13 @@ class DataPreprocessing:
         imp = Imputer(missing_values=np.nan, strategy='most_frequent', copy=False)
         imp = imp.fit(data)
         data = imp.transform(data)
-        return data;
+        return data
 
 
     def scalerData(data):
         scaler = StandardScaler().fit(data)
         scaler.transform(data)
-        return data;
+        return data
 
 
     def fixDataManually(data):
@@ -39,7 +39,7 @@ class DataPreprocessing:
                     data[i] = cc
             NaN = np.any(~np.isnan(data))
             print('is data fixed in data ? ', NaN)
-        return data;
+        return data
 
 
     def splitData(X_public, y_public, amount):
