@@ -6,13 +6,21 @@ from dfs import DFS
 from a_star import AStar
 
 
+# work with hash map because checking of already existing state
+
+
 # -------------------------------------------------------------------------
 
-row = int(input('Enter number of Rows (Must be > 1): '))
-col = int(input('Enter number of Columns (Must be > 1): '))
+# row = int(input('Enter number of Rows (Must be > 1): '))
+row = 2
+# col = int(input('Enter number of Columns (Must be > 1): '))
+col = 3
 puzzel = GameController.create_puzzle(row, col)
 
 puzzel = GameController.scramble(puzzel)
+
+puzzel = [[' 0 ', ' 0 ', ' 0 '], [' 1 ', ' 0 ', ' 1 ']]
+
 puzzelorg = deepcopy(puzzel)
 puzzeldfs = deepcopy(puzzel)
 

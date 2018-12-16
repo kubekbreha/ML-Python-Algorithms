@@ -6,6 +6,8 @@ from copy import deepcopy
 class BFS:
 
     def perform(puzzle, row, col):
+
+
         listofmoves = []
         q = Queue.Queue()
         fifo = puzzle

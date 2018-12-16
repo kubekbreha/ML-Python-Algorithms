@@ -60,6 +60,8 @@ class GameController:
                 rand = random.randint(0, 1)  # based on a 50% chance
                 if rand == 1:  # use perform_move function
                     GameController.perform_move(puzzle, i, e)
+
+        print(puzzle)
         return puzzle  # return "scrambled" puzzle
 
 
