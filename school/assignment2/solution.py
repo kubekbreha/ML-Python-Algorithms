@@ -12,9 +12,9 @@ from a_star import AStar
 # -------------------------------------------------------------------------
 
 # row = int(input('Enter number of Rows (Must be > 1): '))
-row = 5
-# col = int(input('Enter number of Columns (Must be > 1): '))
-col = 5
+row = 2
+# col  int(input('Enter number of Columns (Must be > 1): '))
+col = 3
 puzzel = GameController.create_puzzle(row, col)
 
 puzzel = GameController.scramble(puzzel)
@@ -26,10 +26,10 @@ puzzeldfs = deepcopy(puzzel)
 
 # -------------------------------------------------------------------------
 # uncomment this block to use the dfs_ai search algorithm
-# moves = DFS.perform(puzzel, row, col)
+moves = DFS.perform(puzzel, row, col)
 
 # uncomment to use the A* search
-moves =  AStar.perform(puzzel, row,col)
+# moves =  AStar.perform(puzzel, row,col)
 
 # uncomment to use the BFS
 # moves = BFS.perform(puzzel, row, col)
