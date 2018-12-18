@@ -12,9 +12,9 @@ from a_star import AStar
 # -------------------------------------------------------------------------
 
 # row = int(input('Enter number of Rows (Must be > 1): '))
-row = 2
+row = 5
 # col = int(input('Enter number of Columns (Must be > 1): '))
-col = 3
+col = 5
 puzzel = GameController.create_puzzle(row, col)
 
 puzzel = GameController.scramble(puzzel)
@@ -29,10 +29,10 @@ puzzeldfs = deepcopy(puzzel)
 # moves = DFS.perform(puzzel, row, col)
 
 # uncomment to use the A* search
-# moves =  AStar.myastar_ai(puzzel, row,col)
+moves =  AStar.perform(puzzel, row,col)
 
 # uncomment to use the BFS
-moves = BFS.perform(puzzel, row, col)
+# moves = BFS.perform(puzzel, row, col)
 # -------------------------------------------------------------------------
 
 
@@ -56,15 +56,16 @@ for move in moves:
 if GameController.is_solved(puzzelorg):
     print("hurray")
 else:
-    print(puzzelorg[0][1])
-    print("----")
     if puzzelorg[0][1] == " 1 ":
-        print("perform1")
+        print("hurray")
         puzzelorg = GameController.perform_move(puzzelorg, 0, 2)
         for n in puzzelorg:
             print("".join(n))
+        print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     elif puzzelorg[1][1] == " 1 ":
-        print("perform2")
+        print("hurray")
         puzzelorg =GameController.perform_move(puzzelorg, 1, 2)
         for n in puzzelorg:
             print("".join(n))
+        print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    print("hurray")
